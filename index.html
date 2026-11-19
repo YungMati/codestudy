@@ -25,6 +25,8 @@ textarea:focus,button:focus-visible{outline:2px solid var(--acc);outline-offset:
 .rise{animation:rise .35s ease}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.rise{animation:none}}
 .hero{font-weight:800;letter-spacing:-.03em;line-height:1.05}
+.bar{position:fixed;left:0;right:0;bottom:0;padding:.75rem 1rem calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--line);z-index:5}
+.bar .btn,.bar .b2{flex:1;padding:.9rem 1rem;font-size:1rem}
 </style>
 </head>
 <body>
@@ -35,6 +37,7 @@ const K='codestudy_v1',SUBJ=['HTML','SQL'];
 const uid=()=>Math.random().toString(36).slice(2,9);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let db=(()=>{try{const d=JSON.parse(localStorage.getItem(K));if(d&&d.subjects)return d}catch(e){}return{subjects:{HTML:[],SQL:[]},hist:[],wrong:{},recent:[],solved:0,ok:0}})();
+db.lv=db.lv||{};db.five=!!db.five;
 const save=()=>{try{localStorage.setItem(K,JSON.stringify(db))}catch(e){toast('Nie udało się zapisać danych w przeglądarce.')}};
 let S={v:'home'};
 function toast(m){const t=document.getElementById('toast');t.textContent=m;t.style.display='block';clearTimeout(toast.h);toast.h=setTimeout(()=>t.style.display='none',3500)}
@@ -91,7 +94,7 @@ ${L.length?L.map(sec=>`<section class="card mb-3 rise"><div class="flex justify-
 <button class="b2 mt-2" data-a="addtop" data-i="${sec.id}">Dodaj temat</button></section>`).join(''):'<div class="card mut">Dodaj dział albo zaimportuj plik – dział i temat powstaną z danych w pliku.</div>'}`}
 function topic(){const f=findT(S.t);if(!f){S.v='home';return home()}const{t,s,sec}=f,w=t.qs.filter(q=>db.wrong[t.id+'|'+q.id]).length;
 return `${crumb(A('home','Start'),A('subj',s,'data-i="'+s+'"'),esc(sec.name))}<h1 class="hero text-4xl mb-1">${esc(t.name)}</h1><p class="mut mb-4">Pytania: ${t.qs.length}${w?` · do powtórki: ${w}`:''}</p>${errBox()}${expBox()}
-<div class="flex flex-wrap gap-2 mb-5">${t.qs.length?'<button class="btn" data-a="start">Zacznij quiz</button>':''}${w?'<button class="b2" data-a="startwrong">Powtórz błędne</button>':''}<button class="b2" data-a="imptop">Importuj pytania</button>${t.qs.length?'<button class="b2" data-a="exptop">Eksportuj</button>':''}</div>
+${dots(t)}<div class="flex flex-wrap gap-2 mb-5">${t.qs.length?`<button class="btn" data-a="study">Ucz się</button><button class="b2" data-a="start">Quiz</button><button class="b2" data-a="five">Sesja 5 min: ${db.five?'wł.':'wył.'}</button>`:''}${w?'<button class="b2" data-a="startwrong">Powtórz błędne</button>':''}<button class="b2" data-a="imptop">Importuj pytania</button>${t.qs.length?'<button class="b2" data-a="exptop">Eksportuj</button>':''}</div>
 ${t.qs.length?`<div class="grid gap-2">${t.qs.map(q=>`<div class="card py-3 text-sm"><span class="mut mono">${esc(q.id)} · ${esc(q.type)}</span><div>${esc(q.question)}</div></div>`).join('')}</div>`:'<div class="card mut">Ten temat nie ma jeszcze pytań. Wybierz „Importuj pytania”.</div>'}`}
 function quiz(){const Q=S.q,it=Q.qs[Q.i],q=it.q,c=Q.res;
 return `${crumb(A('home','Start'),esc(it.name))}<div class="h-1 rounded mb-4" style="background:var(--line)"><div class="h-1 rounded" style="background:var(--acc);width:${Q.i/Q.qs.length*100}%;transition:width .3s"></div></div>
@@ -104,7 +107,7 @@ function stats(){const w=Object.keys(db.wrong).length;
 return `${crumb(A('home','Start'),'Postępy')}<h1 class="hero text-4xl mb-4">Postępy</h1><div class="grid grid-cols-3 gap-2 mb-4">${[['Rozwiązane',db.solved],['Poprawne',db.ok],['Skuteczność',(db.solved?Math.round(db.ok/db.solved*100):0)+'%']].map(x=>`<div class="card"><div class="text-2xl font-extrabold">${x[1]}</div><div class="mut text-sm">${x[0]}</div></div>`).join('')}</div>
 ${w?`<button class="btn mb-4" data-a="startallwrong">Powtórz błędne pytania (${w})</button>`:''}<h2 class="font-bold mb-2">Historia quizów</h2>${db.hist.length?`<div class="grid gap-2">${db.hist.slice(0,30).map(h=>`<div class="card py-3 flex justify-between text-sm"><span>${esc(h.name)} <span class="mut">${esc(h.d)}</span></span><b>${h.c}/${h.n}</b></div>`).join('')}</div>`:'<p class="mut">Brak ukończonych quizów.</p>'}<div class="mt-6">${A('reset','Wyczyść postępy')}</div>`}
 function render(){const bar=`<header class="flex justify-between items-center py-4"><button class="font-extrabold text-xl cursor-pointer" data-a="home" style="background:none;border:0;color:var(--ink)">CodeStudy</button><button class="b2" data-a="stats">Postępy</button></header>`;
-document.getElementById('app').innerHTML=bar+({home,subject,topic,quiz,result,stats}[S.v])();window.scrollTo(0,0);const a=document.getElementById('ans');if(a&&!S.q.res)a.focus()}
+document.getElementById('app').innerHTML=bar+({home,subject,topic,quiz,result,stats,study}[S.v])();window.scrollTo(0,0);const a=document.getElementById('ans');if(a&&!S.q.res)a.focus()}
 
 /* GitHub */
 function ghCfg(){if(db.gh&&db.gh.repo)return db.gh;const m=location.hostname.match(/^(.+)\.github\.io$/),p=location.pathname.split('/')[1];return m&&p?{repo:m[1]+'/'+p,branch:'main'}:null}
@@ -124,6 +127,37 @@ db.gh={...c,at:Date.now()};save();S.err=errs.length?errs:null;
 toast(files.length?`Zsynchronizowano: tematy ${k}, pytania ${n}`:'Nie znaleziono plików w materials/PRZEDMIOT/DZIAŁ/temat.json');
 if(['home','subject','topic'].includes(S.v))render()}
 catch(x){toast('Synchronizacja nie powiodła się: '+x.message)}}
+/* nauka */
+let tm;
+const lvOf=(tid,q)=>db.lv[tid+'|'+q.id];
+const fmt=ms=>{const s=Math.max(0,Math.ceil(ms/1000));return Math.floor(s/60)+':'+String(s%60).padStart(2,'0')};
+const lvCol=l=>l===undefined?'var(--line)':l<1?'var(--bad)':l<2?'#d9a441':'var(--ok)';
+function dots(t){if(!t.qs.length)return'';return `<div class="mb-4"><div>${t.qs.map(q=>`<i style="display:inline-block;width:11px;height:11px;border-radius:50%;margin:2px;background:${lvCol(lvOf(t.id,q))}"></i>`).join('')}</div><p class="mut text-xs">Szare: nowe · czerwone: do powtórki · żółte: ćwiczysz · zielone: umiesz</p></div>`}
+function runnable(it){if(it.s!=='HTML')return'';const q=it.q;if(q.type==='write_code')return q.correct_answer;
+if(q.type==='fill_code'){const i=q.question.indexOf(': ');return i<0?'':q.question.slice(i+2).replace(/_{2,}/g,q.correct_answer)}
+if(q.type==='code_output'){const m=q.question.match(/wynik (?:działania )?(.+)\?\s*$/);return m?m[1]:''}return''}
+const sbDoc=c=>'<body style="font:14px system-ui,sans-serif;margin:8px;color:#111;background:#fff"><scr'+'ipt>try{var c='+JSON.stringify(c).replace(/</g,'\\u003c')+';var r=eval(c);if(!/document\\.write/.test(c)&&r!==undefined)document.write(String(r))}catch(e){document.write("Błąd: "+e.message)}</scr'+'ipt>';
+function runSb(){const c=document.getElementById('sbc'),f=document.getElementById('sbo');if(c&&f)f.srcdoc=sbDoc(c.value)}
+const sbPanel=c=>`<div class="mt-3"><textarea id="sbc" rows="3" spellcheck="false" autocapitalize="off">${esc(c)}</textarea><button class="b2 mt-2" data-a="run">Uruchom</button><iframe id="sbo" sandbox="allow-scripts" style="width:100%;height:90px;margin-top:.5rem;border:1px solid var(--line);border-radius:10px;background:#fff"></iframe></div>`;
+function startStudy(its){if(!its.length)return toast('Brak pytań.');
+its=its.sort(()=>Math.random()-.5).sort((a,b)=>(lvOf(a.tid,a.q)??-1)-(lvOf(b.tid,b.q)??-1));
+S.st={qs:its,total:its.length,known:0,stage:'q',val:'',tres:null,sb:false,t0:Date.now(),lim:db.five?300000:null,over:false};S.v='study';S.err=null;
+clearInterval(tm);if(S.st.lim)tm=setInterval(()=>{if(S.v!=='study'||!S.st.lim){clearInterval(tm);return}const r=S.st.lim-(Date.now()-S.st.t0);if(r<=0){clearInterval(tm);S.st.over=true;render();return}const e=document.getElementById('tm');if(e)e.textContent=fmt(r)},1000);
+render()}
+function rate(ok){const st=S.st,it=st.qs.shift(),k=it.tid+'|'+it.q.id;db.lv[k]=ok?Math.min(3,(db.lv[k]??0)+1):0;
+if(ok){st.known++;if(!db.recent.includes(it.tid))db.recent.unshift(it.tid)}else st.qs.splice(Math.min(3,st.qs.length),0,it);
+st.stage='q';st.val='';st.tres=null;st.sb=false;save();render()}
+function study(){const st=S.st;
+if(st.over||!st.qs.length){const done=!st.qs.length;return `<div class="rise"><h1 class="hero text-4xl mt-8 mb-2">${done?'Gotowe':'Koniec 5 minut'}</h1><p class="mut mb-6">Opanowane w tej sesji: ${st.known} z ${st.total}.${done?'':' Możesz skończyć albo ruszyć dalej bez limitu.'}</p><div class="flex flex-wrap gap-2">${done?'':'<button class="btn" data-a="goon">Kontynuuj</button>'}<button class="b2" data-a="topic" data-i="${S.t}">Wróć do tematu</button><button class="b2" data-a="home">Start</button></div></div>`}
+const it=st.qs[0],q=it.q,code=runnable(it),rt=/^(write_|fill_)/.test(q.type);
+const head=`<div class="h-1 rounded mb-3" style="background:var(--line)"><div class="h-1 rounded" style="background:var(--acc);width:${st.known/st.total*100}%;transition:width .3s"></div></div><div class="flex justify-between text-sm mut mb-3"><span>Opanowane ${st.known} z ${st.total}</span>${st.lim?`<span id="tm">${fmt(st.lim-(Date.now()-st.t0))}</span>`:''}</div>`;
+let body=`<p class="text-lg font-semibold" style="white-space:pre-wrap">${esc(q.question)}</p>`,bar;
+if(st.stage==='q')bar=`<button class="btn" data-a="show">Pokaż odpowiedź</button>`;
+else if(st.stage==='a'){body+=`<div class="rounded-lg p-3 mt-4" style="background:var(--bg)"><div class="mono text-sm" style="white-space:pre-wrap">${esc(q.correct_answer)}</div></div><p class="text-sm mt-3">${esc(q.explanation)}</p>${rt?'<button class="b2 mt-3 mr-2" data-a="retype">Przepisz z pamięci</button>':''}${code?'<button class="b2 mt-3" data-a="sb">Wypróbuj kod</button>':''}${st.sb&&code?sbPanel(code):''}`;
+bar=`<button class="b2" data-a="no">Jeszcze nie</button><button class="btn" data-a="yes">Wiem</button>`}
+else{const r=st.tres;body+=`<textarea id="tans" class="mt-4" rows="3" ${r?'readonly':''} placeholder="Wpisz z pamięci…" spellcheck="false" autocapitalize="off" autocomplete="off">${esc(st.val)}</textarea>`+(r?`<div class="rounded-lg p-3 mt-3 ${r.ok?'ok':'bad'}"><b>${r.ok?'Dobrze':'Jeszcze nie'}</b>${r.ok?'':`<div class="mono text-sm mt-1" style="white-space:pre-wrap">${esc(q.correct_answer)}</div>`}</div>`:'');
+bar=r?`<button class="btn" data-a="tnext">Dalej</button>`:`<button class="b2" data-a="show">Podejrzyj</button><button class="btn" data-a="tcheck">Sprawdź</button>`}
+return `${crumb(A('topic','← Temat','data-i="'+S.t+'"'))}${head}<div class="card rise">${body}</div><div style="height:5.5rem"></div><div class="bar"><div class="max-w-3xl mx-auto flex gap-2">${bar}</div></div>`}
 /* quiz */
 function begin(items){if(!items.length)return toast('Brak pytań do rozwiązania.');S.q={qs:items.sort(()=>Math.random()-.5),i:0,ok:0,val:'',res:null};S.v='quiz';S.err=null;render()}
 function items(tid,onlyWrong){const f=findT(tid);return f.t.qs.filter(q=>!onlyWrong||db.wrong[tid+'|'+q.id]).map(q=>({q,tid,s:f.s,name:f.t.name}))}
@@ -142,6 +176,13 @@ deltop:i=>{if(confirm('Usunąć temat i jego pytania?')){const f=findT(i);f.sec.
 impmeta:importMeta,imptop:()=>importTopic(S.t),exportall:()=>exportData(),exptop:()=>exportData(S.t),
 sync:()=>sync(false),
 setrepo:()=>{const c=ghCfg()||{},r=prompt('Repozytorium GitHub (login/nazwa):',c.repo||'');if(!r||!/^[\w.-]+\/[\w.-]+$/.test(r.trim()))return r&&toast('Wpisz w formacie login/nazwa');const b=prompt('Gałąź:',c.branch||'main')||'main';db.gh={repo:r.trim(),branch:b.trim()};save();sync(false)},
+study:()=>startStudy(items(S.t)),five:()=>{db.five=!db.five;save();render()},
+show:()=>{if(S.st.stage==='t')S.st.val=document.getElementById('tans').value;S.st.stage='a';render()},
+retype:()=>{S.st.stage='t';S.st.val='';S.st.tres=null;render();const e=document.getElementById('tans');if(e)e.focus()},
+tcheck:()=>{const st=S.st,it=st.qs[0];st.val=document.getElementById('tans').value;if(!st.val.trim())return toast('Wpisz odpowiedź.');st.tres={ok:check(it.q,it.s,st.val)};render()},
+tnext:()=>rate(S.st.tres.ok),yes:()=>rate(true),no:()=>rate(false),
+sb:()=>{S.st.sb=!S.st.sb;render();runSb()},run:()=>runSb(),
+goon:()=>{S.st.over=false;S.st.lim=null;render()},
 closeexp:()=>{S.exp=null;render()},
 copy:()=>{const e=document.getElementById('exp');e.select();try{navigator.clipboard.writeText(S.exp).then(()=>toast('Skopiowano'),()=>toast('Zaznaczono tekst – skopiuj ręcznie'))}catch(x){toast('Zaznaczono tekst – skopiuj ręcznie')}},
 start:()=>begin(items(S.t)),startwrong:()=>begin(items(S.t,true)),startallwrong:()=>begin(allWrong()),
