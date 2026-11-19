@@ -1,1 +1,1463 @@
-{ “subject”: “HTML”, “section”: “JavaScript”, “topic”: “Obiekty wbudowane”, “questions”: \[ { "id": "q1", "type": "short_answer", "question": "Czym jest obiekt w programowaniu?", "correct_answer": "Konstrukcją programistyczną posiadającą właściwości i metody.", "accepted_answers": \[ "Konstrukcja programistyczna posiadająca właściwości i metody", "Konstrukcja mająca cechy i funkcje" \], “explanation”: “Obiekt posiada właściwości, czyli cechy, oraz metody, czyli funkcje.” }, { “id”: “q2”, “type”: “short_answer”, “question”: “Jak nazywamy funkcję służącą do definiowania obiektów?”, “correct_answer”: “Konstruktor”, “accepted_answers”: "Konstruktor", "Funkcja konstruktora", “explanation”: “Obiekt definiujemy za pomocą specjalnej funkcji zwanej konstruktorem.” }, { “id”: “q3”, “type”: “short_answer”, “question”: “Jakim operatorem tworzymy nowy obiekt?”, “correct_answer”: “new”, “accepted_answers”: "new", "Operatorem new", “explanation”: “Operator new służy do tworzenia nowego obiektu na podstawie konstruktora.” }, { “id”: “q4”, “type”: “short_answer”, “question”: “Do czego służy obiekt document?”, “correct_answer”: “Do modyfikacji dokumentu HTML aktualnie wczytanego przez przeglądarkę.”, “accepted_answers”: "Do modyfikacji dokumentu HTML", "Do obsługi aktualnie wczytanego dokumentu HTML", “explanation”: “Obiekt document udostępnia metody i właściwości pozwalające modyfikować dokument HTML.” }, { “id”: “q5”, “type”: “short_answer”, “question”: “Jaką metodą obiektu document wypiszesz tekst lub kod HTML w dokumencie?”, “correct_answer”: “document.write()”, “accepted_answers”: "document.write()", "write()", “explanation”: “Metoda write() wypisuje wyrażenie HTML w dokumencie.” }, { “id”: “q6”, “type”: “short_answer”, “question”: “Co robi metoda document.clear()?”, “correct_answer”: “Czyści zawartość bieżącego okna.”, “accepted_answers”: "Czyści zawartość okna", "Usuwa zawartość bieżącego okna", “explanation”: “Metoda clear() służy do czyszczenia zawartości bieżącego okna.” }, { “id”: “q7”, “type”: “short_answer”, “question”: “Co robi metoda document.close() według notatek?”, “correct_answer”: “Zamyka bieżące okno.”, “accepted_answers”: "Zamyka okno", "Zamyka bieżące okno", “explanation”: “Metoda close() odpowiada za zamknięcie bieżącego okna.” }, { “id”: “q8”, “type”: “short_answer”, “question”: “Jaką właściwością obiektu document pobierzesz tytuł dokumentu?”, “correct_answer”: “document.title”, “accepted_answers”: "document.title", "title", “explanation”: “Właściwość title przechowuje tytuł dokumentu.” }, { “id”: “q9”, “type”: “short_answer”, “question”: “Jaką wartość ma właściwość title, jeśli tytuł dokumentu nie został zdefiniowany według notatek?”, “correct_answer”: “null”, “accepted_answers”: "null", “explanation”: “Jeśli tytuł nie został zdefiniowany, właściwość title ma wartość null.” }, { “id”: “q10”, “type”: “short_answer”, “question”: “Jaką właściwością obiektu document pobierzesz pełny adres URL aktualnego dokumentu?”, “correct_answer”: “document.location”, “accepted_answers”: "document.location", "location", “explanation”: “Właściwość location zawiera pełny adres URL aktualnie otwartego dokumentu.” }, { “id”: “q11”, “type”: “short_answer”, “question”: “Co przechowuje właściwość lastModified?”, “correct_answer”: “Datę ostatniej modyfikacji dokumentu.”, “accepted_answers”: "Datę ostatniej modyfikacji", "Informację o ostatniej modyfikacji dokumentu", “explanation”: “Właściwość lastModified zawiera datę ostatniej modyfikacji dokumentu.” }, { “id”: “q12”, “type”: “short_answer”, “question”: “Co przechowuje właściwość referrer?”, “correct_answer”: “Adres URL strony, z której wywołano bieżący dokument.”, “accepted_answers”: "Adres URL strony poprzedniej", "Adres strony, z której otwarto bieżący dokument", "URL strony odsyłającej", “explanation”: “Właściwość referrer wskazuje adres strony, spod której wywołano aktualny dokument.” }, { “id”: “q13”, “type”: “short_answer”, “question”: “Jaką właściwością obiektu document określisz kolor tła dokumentu?”, “correct_answer”: “bgcolor”, “accepted_answers”: "bgcolor", "document.bgcolor", “explanation”: “Właściwość bgcolor określa kolor tła dokumentu.” }, { “id”: “q14”, “type”: “short_answer”, “question”: “Jaką właściwością określisz kolor tekstu dokumentu?”, “correct_answer”: “fgcolor”, “accepted_answers”: "fgcolor", "document.fgcolor", “explanation”: “Właściwość fgcolor określa kolor tekstu.” }, { “id”: “q15”, “type”: “short_answer”, “question”: “Za co odpowiada właściwość linkcolor?”, “correct_answer”: “Określa kolor odsyłaczy, czyli linków.”, “accepted_answers”: "Kolor linków", "Kolor odsyłaczy", “explanation”: “Właściwość linkcolor określa kolor odsyłaczy.” }, { “id”: “q16”, “type”: “short_answer”, “question”: “Za co odpowiada właściwość vlinkcolor?”, “correct_answer”: “Określa kolor odwiedzonych odsyłaczy.”, “accepted_answers”: "Kolor odwiedzonych linków", "Kolor odwiedzonych odsyłaczy", “explanation”: “Litera v oznacza visited, czyli odwiedzone linki.” }, { “id”: “q17”, “type”: “short_answer”, “question”: “Za co odpowiada właściwość alinkcolor?”, “correct_answer”: “Określa kolor aktywnych odsyłaczy.”, “accepted_answers”: "Kolor aktywnych linków", "Kolor linków aktywnych", “explanation”: “Właściwość alinkcolor określa kolor aktywnych odsyłaczy.” }, { “id”: “q18”, “type”: “short_answer”, “question”: “Co przechowuje tablica forms?”, “correct_answer”: “Pozycje każdego formularza w dokumencie.”, “accepted_answers”: "Pozycje formularzy", "Formularze znajdujące się w dokumencie", “explanation”: “Tablica forms zawiera pozycje formularzy znajdujących się w dokumencie.” }, { “id”: “q19”, “type”: “short_answer”, “question”: “Co określa właściwość forms.length?”, “correct_answer”: “Liczbę formularzy w dokumencie.”, “accepted_answers”: "Liczbę formularzy", "Ilość formularzy w dokumencie", “explanation”: “Właściwość length przechowuje liczbę formularzy.” }, { “id”: “q20”, “type”: “short_answer”, “question”: “Co przechowuje tablica links?”, “correct_answer”: “Pozycje obiektów area i link w dokumencie.”, “accepted_answers”: "Pozycje linków i obiektów area", "Odsyłacze i obiekty area", “explanation”: “Tablica links zawiera pozycje odsyłaczy oraz obiektów area.” }, { “id”: “q21”, “type”: “short_answer”, “question”: “Co określa właściwość links.length?”, “correct_answer”: “Liczbę odsyłaczy i obiektów area w dokumencie.”, “accepted_answers”: "Liczbę linków", "Liczbę odsyłaczy", "Liczbę obiektów link i area", “explanation”: “Właściwość links.length zwraca liczbę odsyłaczy w dokumencie.” }, { “id”: “q22”, “type”: “short_answer”, “question”: “Co przechowuje tablica anchors?”, “correct_answer”: “Pozycje zakotwiczeń w dokumencie.”, “accepted_answers”: "Pozycje zakotwiczeń", "Zakotwiczenia dokumentu", “explanation”: “Tablica anchors zawiera pozycje zakotwiczeń.” }, { “id”: “q23”, “type”: “short_answer”, “question”: “Co określa właściwość anchors.length?”, “correct_answer”: “Liczbę zakotwiczeń w dokumencie.”, “accepted_answers”: "Liczbę zakotwiczeń", "Ilość zakotwiczeń", “explanation”: “Właściwość length określa liczbę zakotwiczeń.” }, { “id”: “q24”, “type”: “short_answer”, “question”: “Napisz kod wyświetlający tytuł aktualnego dokumentu.”, “correct_answer”: “document.write(document.title);”, “accepted_answers”: "document.write(document.title);", "document.write(document.title)", “explanation”: “document.title pobiera tytuł, a document.write() wyświetla go w dokumencie.” }, { “id”: “q25”, “type”: “short_answer”, “question”: “Napisz kod wyświetlający adres URL aktualnego dokumentu.”, “correct_answer”: “document.write(document.location);”, “accepted_answers”: "document.write(document.location);", "document.write(document.location)", “explanation”: “Właściwość document.location zwraca adres URL dokumentu.” }, { “id”: “q26”, “type”: “short_answer”, “question”: “Napisz kod wyświetlający liczbę odsyłaczy w dokumencie.”, “correct_answer”: “document.write(document.links.length);”, “accepted_answers”: "document.write(document.links.length);", "document.write(document.links.length)", “explanation”: “document.links.length zwraca liczbę odsyłaczy.” }, { “id”: “q27”, “type”: “short_answer”, “question”: “Do czego służy obiekt location?”, “correct_answer”: “Przechowuje informacje o aktualnym adresie URL dokumentu i umożliwia operowanie tym adresem.”, “accepted_answers”: "Do przechowywania informacji o adresie URL", "Do odczytywania i zmieniania adresu URL dokumentu", “explanation”: “Obiekt location udostępnia właściwości i metody związane z adresem URL.” }, { “id”: “q28”, “type”: “short_answer”, “question”: “Jaką właściwością obiektu location pobierzesz cały adres URL dokumentu?”, “correct_answer”: “location.href”, “accepted_answers”: "location.href", "href", “explanation”: “Właściwość href zawiera cały adres URL dokumentu.” }, { “id”: “q29”, “type”: “short_answer”, “question”: “Co zwraca właściwość location.protocol?”, “correct_answer”: “Początek adresu URL wraz z pierwszym dwukropkiem.”, “accepted_answers”: "Protokół adresu URL", "Protokół wraz z dwukropkiem", “explanation”: “Właściwość protocol zawiera protokół, np. https:.” }, { “id”: “q30”, “type”: “short_answer”, “question”: “Co zawiera właściwość location.host według notatek?”, “correct_answer”: “Nazwę serwera i nazwę domeny.”, “accepted_answers”: "Nazwę serwera", "Nazwę domeny i serwera", “explanation”: “Właściwość host przechowuje informacje o serwerze i domenie.” }, { “id”: “q31”, “type”: “short_answer”, “question”: “Co zawiera właściwość location.hostname według notatek?”, “correct_answer”: “Pełną nazwę serwera łącznie z numerem portu.”, “accepted_answers”: "Nazwę serwera i numer portu", "Pełną nazwę serwera z portem", “explanation”: “Taką definicję właściwości hostname podają przesłane notatki.” }, { “id”: “q32”, “type”: “short_answer”, “question”: “Za co odpowiada właściwość location.port?”, “correct_answer”: “Określa port komunikacyjny serwera.”, “accepted_answers”: "Numer portu serwera", "Port komunikacyjny", “explanation”: “Właściwość port określa port komunikacyjny serwera.” }, { “id”: “q33”, “type”: “short_answer”, “question”: “Co zawiera właściwość location.pathname?”, “correct_answer”: “Ścieżkę w adresie URL.”, “accepted_answers”: "Ścieżkę adresu URL", "Część adresu URL określającą ścieżkę", “explanation”: “Właściwość pathname zawiera część adresu URL określającą ścieżkę.” }, { “id”: “q34”, “type”: “short_answer”, “question”: “Od jakiego znaku rozpoczyna się wartość właściwości location.hash?”, “correct_answer”: “#”, “accepted_answers”: "#", "Znak #", “explanation”: “Właściwość hash zawiera fragment adresu rozpoczynający się znakiem #.” }, { “id”: “q35”, “type”: “short_answer”, “question”: “Co określa właściwość location.hash?”, “correct_answer”: “Nazwę zakotwiczenia w dokumencie.”, “accepted_answers”: "Zakotwiczenie dokumentu", "Fragment adresu URL wskazujący zakotwiczenie", “explanation”: “Właściwość hash wskazuje nazwę zakotwiczenia.” }, { “id”: “q36”, “type”: “short_answer”, “question”: “Od jakiego znaku rozpoczyna się wartość właściwości location.search?”, “correct_answer”: “?”, “accepted_answers”: "?", "Znak zapytania", “explanation”: “Właściwość search zawiera zapytanie z adresu URL rozpoczynające się znakiem ?.” }, { “id”: “q37”, “type”: “short_answer”, “question”: “Co zawiera właściwość location.search?”, “correct_answer”: “Zapytanie znajdujące się w adresie URL.”, “accepted_answers”: "Zapytanie URL", "Parametry zapytania w adresie URL", “explanation”: “Właściwość search przechowuje część adresu URL zawierającą zapytanie.” }, { “id”: “q38”, “type”: “short_answer”, “question”: “Co robi metoda location.assign(url)?”, “correct_answer”: “Wczytuje dokument o adresie wskazanym przez argument url.”, “accepted_answers”: "Przechodzi pod wskazany adres URL", "Wczytuje stronę pod podanym adresem", “explanation”: “Metoda assign() przechodzi do dokumentu wskazanego adresem URL.” }, { “id”: “q39”, “type”: “short_answer”, “question”: “Co robi metoda location.reload(force)?”, “correct_answer”: “Wymusza ponowne wczytanie bieżącej strony.”, “accepted_answers”: "Odświeża bieżącą stronę", "Ponownie wczytuje stronę", “explanation”: “Metoda reload() służy do ponownego wczytania aktualnej strony.” }, { “id”: “q40”, “type”: “short_answer”, “question”: “Co robi metoda location.replace(url)?”, “correct_answer”: “Zastępuje bieżący dokument dokumentem wczytanym spod wskazanego adresu URL.”, “accepted_answers”: "Zastępuje bieżącą stronę stroną z podanego adresu", "Wczytuje nowy dokument zamiast bieżącego", “explanation”: “Metoda replace() zastępuje aktualny dokument dokumentem wskazanym przez url.” }, { “id”: “q41”, “type”: “short_answer”, “question”: “Napisz kod wyświetlający cały adres URL za pomocą obiektu location.”, “correct_answer”: “document.write(location.href);”, “accepted_answers”: "document.write(location.href);", "document.write(location.href)", “explanation”: “Właściwość href zawiera cały adres URL.” }, { “id”: “q42”, “type”: “short_answer”, “question”: “Napisz kod wyświetlający protokół aktualnego adresu URL.”, “correct_answer”: “document.write(location.protocol);”, “accepted_answers”: "document.write(location.protocol);", "document.write(location.protocol)", “explanation”: “Właściwość protocol zwraca protokół adresu URL.” }, { “id”: “q43”, “type”: “short_answer”, “question”: “Napisz kod wyświetlający nazwę serwera i domenę za pomocą właściwości host.”, “correct_answer”: “document.write(location.host);”, “accepted_answers”: "document.write(location.host);", "document.write(location.host)", “explanation”: “Właściwość host zawiera nazwę serwera i domenę.” }, { “id”: “q44”, “type”: “short_answer”, “question”: “Napisz kod wyświetlający ścieżkę aktualnego adresu URL.”, “correct_answer”: “document.write(location.pathname);”, “accepted_answers”: "document.write(location.pathname);", "document.write(location.pathname)", “explanation”: “Właściwość pathname zwraca ścieżkę adresu URL.” }, { “id”: “q45”, “type”: “short_answer”, “question”: “Do czego służy obiekt Math?”, “correct_answer”: “Do wykonywania obliczeń matematycznych oraz korzystania ze stałych matematycznych.”, “accepted_answers”: "Do obliczeń matematycznych", "Do wykonywania obliczeń i korzystania ze stałych matematycznych", “explanation”: “Obiekt Math udostępnia metody matematyczne i stałe.” }, { “id”: “q46”, “type”: “short_answer”, “question”: “Jaką właściwością Math pobierzesz wartość liczby Eulera?”, “correct_answer”: “Math.E”, “accepted_answers”: "Math.E", "E", “explanation”: “Math.E zwraca liczbę Eulera o wartości około 2,718.” }, { “id”: “q47”, “type”: “short_answer”, “question”: “Jaką wartość w przybliżeniu ma Math.E?”, “correct_answer”: “2,718”, “accepted_answers”: "2.718", "2,718", "2.71828", “explanation”: “Liczba Eulera ma wartość około 2,718.” }, { “id”: “q48”, “type”: “short_answer”, “question”: “Co zwraca właściwość Math.LN2?”, “correct_answer”: “Logarytm naturalny z 2, czyli około 0,693.”, “accepted_answers”: "Logarytm naturalny z 2", "0.693", "0,693", “explanation”: “Math.LN2 przechowuje wartość logarytmu naturalnego z 2.” }, { “id”: “q49”, “type”: “short_answer”, “question”: “Co zwraca właściwość Math.LN10?”, “correct_answer”: “Logarytm naturalny z 10, czyli około 2,302.”, “accepted_answers”: "Logarytm naturalny z 10", "2.302", "2,302", “explanation”: “Math.LN10 przechowuje wartość logarytmu naturalnego z 10.” }, { “id”: “q50”, “type”: “short_answer”, “question”: “Co zwraca właściwość Math.LOG2E?”, “correct_answer”: “Logarytm liczby e o podstawie 2, około 1,442.”, “accepted_answers”: "Logarytm o podstawie 2 z liczby e", "1.442", "1,442", “explanation”: “Math.LOG2E zwraca logarytm liczby e przy podstawie 2.” }, { “id”: “q51”, “type”: “short_answer”, “question”: “Co zwraca właściwość Math.LOG10E?”, “correct_answer”: “Logarytm liczby e o podstawie 10, około 0,434.”, “accepted_answers”: "Logarytm o podstawie 10 z liczby e", "0.434", "0,434", “explanation”: “Math.LOG10E zwraca logarytm liczby e przy podstawie 10.” }, { “id”: “q52”, “type”: “short_answer”, “question”: “Jaką wartość zwraca Math.PI?”, “correct_answer”: “Liczbę pi, około 3,1415.”, “accepted_answers”: "3.1415", "3,1415", "Liczbę pi", “explanation”: “Math.PI udostępnia stałą matematyczną pi.” }, { “id”: “q53”, “type”: “short_answer”, “question”: “Co zwraca właściwość Math.SQRT1_2?”, “correct_answer”: “Pierwiastek kwadratowy z 1/2, około 0,707.”, “accepted_answers”: "Pierwiastek z jednej drugiej", "0.707", "0,707", “explanation”: “Math.SQRT1_2 przechowuje wartość pierwiastka kwadratowego z 1/2.” }, { “id”: “q54”, “type”: “short_answer”, “question”: “Co zwraca właściwość Math.SQRT2?”, “correct_answer”: “Pierwiastek kwadratowy z 2, około 1,414.”, “accepted_answers”: "Pierwiastek z 2", "1.414", "1,414", “explanation”: “Math.SQRT2 przechowuje wartość pierwiastka kwadratowego z 2.” }, { “id”: “q55”, “type”: “short_answer”, “question”: “Jaką metodą Math obliczysz wartość bezwzględną liczby?”, “correct_answer”: “Math.abs(x)”, “accepted_answers”: "Math.abs(x)", "abs(x)", “explanation”: “Metoda abs() zwraca wartość bezwzględną podanej liczby.” }, { “id”: “q56”, “type”: “short_answer”, “question”: “Jaki będzie wynik działania Math.abs(-10)?”, “correct_answer”: “10”, “accepted_answers”: "10", “explanation”: “Wartość bezwzględna liczby -10 wynosi 10.” }, { “id”: “q57”, “type”: “short_answer”, “question”: “Do czego służy metoda Math.acos(x)?”, “correct_answer”: “Oblicza arcus cosinus liczby x podanej w radianach.”, “accepted_answers”: "Oblicza arcus cosinus", "Zwraca odwrotną funkcję cosinus", “explanation”: “Metoda acos() oblicza arcus cosinus.” }, { “id”: “q58”, “type”: “short_answer”, “question”: “Do czego służy metoda Math.asin(x)?”, “correct_answer”: “Oblicza arcus sinus liczby x podanej w radianach.”, “accepted_answers”: "Oblicza arcus sinus", "Zwraca odwrotną funkcję sinus", “explanation”: “Metoda asin() oblicza arcus sinus.” }, { “id”: “q59”, “type”: “short_answer”, “question”: “Do czego służy metoda Math.atan(x)?”, “correct_answer”: “Oblicza arcus tangens liczby x.”, “accepted_answers”: "Oblicza arcus tangens", "Zwraca odwrotną funkcję tangens", “explanation”: “Metoda atan() zwraca arcus tangens z przedziału od -pi/2 do pi/2.” }, { “id”: “q60”, “type”: “short_answer”, “question”: “Do czego służy metoda Math.atan2(y,x)?”, “correct_answer”: “Oblicza arcus tangens dla podanych współrzędnych y i x.”, “accepted_answers”: "Oblicza arcus tangens dla y i x", "Oblicza kąt na podstawie współrzędnych y i x", “explanation”: “Metoda atan2() oblicza kąt na podstawie dwóch argumentów.” }, { “id”: “q61”, “type”: “short_answer”, “question”: “Co robi metoda Math.ceil(x)?”, “correct_answer”: “Zaokrągla liczbę w górę do najbliższej liczby całkowitej.”, “accepted_answers”: "Zaokrągla w górę", "Zaokrągla liczbę w górę do całkowitej", “explanation”: “Metoda ceil() zawsze zaokrągla w kierunku większej liczby całkowitej.” }, { “id”: “q62”, “type”: “short_answer”, “question”: “Jaki będzie wynik działania Math.ceil(1.7)?”, “correct_answer”: “2”, “accepted_answers”: "2", “explanation”: “Metoda ceil() zaokrągla 1.7 w górę do 2.” }, { “id”: “q63”, “type”: “short_answer”, “question”: “Do czego służy metoda Math.cos(x)?”, “correct_answer”: “Oblicza cosinus kąta podanego w radianach.”, “accepted_answers”: "Oblicza cosinus", "Zwraca cosinus kąta", “explanation”: “Metoda cos() oblicza cosinus podanego kąta.” }, { “id”: “q64”, “type”: “short_answer”, “question”: “Co robi metoda Math.exp(x)?”, “correct_answer”: “Zwraca wartość e podniesionego do potęgi x.”, “accepted_answers”: "Oblicza e do potęgi x", "Zwraca e^x", “explanation”: “Metoda exp(x) oblicza e^x.” }, { “id”: “q65”, “type”: “short_answer”, “question”: “Co robi metoda Math.floor(x)?”, “correct_answer”: “Zaokrągla liczbę w dół do najbliższej liczby całkowitej.”, “accepted_answers”: "Zaokrągla w dół", "Zaokrągla do mniejszej liczby całkowitej", “explanation”: “Metoda floor() zaokrągla w kierunku mniejszej liczby całkowitej.” }, { “id”: “q66”, “type”: “short_answer”, “question”: “Jaki będzie wynik działania Math.floor(1.7)?”, “correct_answer”: “1”, “accepted_answers”: "1", “explanation”: “Metoda floor() zaokrągla 1.7 w dół do 1.” }, { “id”: “q67”, “type”: “short_answer”, “question”: “Do czego służy metoda Math.log(x)?”, “correct_answer”: “Zwraca logarytm naturalny liczby x o podstawie e.”, “accepted_answers”: "Oblicza logarytm naturalny", "Oblicza logarytm o podstawie e", “explanation”: “Metoda log() oblicza logarytm naturalny.” }, { “id”: “q68”, “type”: “short_answer”, “question”: “Jaki będzie wynik działania Math.log(1)?”, “correct_answer”: “0”, “accepted_answers”: "0", “explanation”: “Logarytm naturalny z 1 wynosi 0.” }, { “id”: “q69”, “type”: “short_answer”, “question”: “Do czego służy metoda Math.max(x,y,z…)?”, “correct_answer”: “Zwraca największą liczbę spośród podanych argumentów.”, “accepted_answers”: "Zwraca największą liczbę", "Wybiera największą wartość", “explanation”: “Metoda max() znajduje największą z podanych liczb.” }, { “id”: “q70”, “type”: “short_answer”, “question”: “Jaki będzie wynik działania Math.max(100, 1, 2, 6, -5)?”, “correct_answer”: “100”, “accepted_answers”: "100", “explanation”: “Największą liczbą w podanym zestawie jest 100.” }, { “id”: “q71”, “type”: “short_answer”, “question”: “Do czego służy metoda Math.min(x,y,z…)?”, “correct_answer”: “Zwraca najmniejszą liczbę spośród podanych argumentów.”, “accepted_answers”: "Zwraca najmniejszą liczbę", "Wybiera najmniejszą wartość", “explanation”: “Metoda min() znajduje najmniejszą z podanych liczb.” }, { “id”: “q72”, “type”: “short_answer”, “question”: “Jaką metodą Math podniesiesz liczbę x do potęgi y?”, “correct_answer”: “Math.pow(x,y)”, “accepted_answers”: "Math.pow(x,y)", "pow(x,y)", “explanation”: “Metoda pow() oblicza x podniesione do potęgi y.” }, { “id”: “q73”, “type”: “short_answer”, “question”: “Jaki będzie wynik działania Math.pow(2,3)?”, “correct_answer”: “8”, “accepted_answers”: "8", “explanation”: “Metoda pow() oblicza 2 do potęgi 3, czyli 8.” }, { “id”: “q74”, “type”: “short_answer”, “question”: “Do czego służy metoda Math.random()?”, “correct_answer”: “Zwraca losową liczbę z przedziału od 0 do 1.”, “accepted_answers”: "Losuje liczbę od 0 do 1", "Zwraca liczbę losową", “explanation”: “Metoda random() generuje losową liczbę z zakresu od 0 do 1.” }, { “id”: “q75”, “type”: “short_answer”, “question”: “Do czego służy metoda Math.round(x)?”, “correct_answer”: “Zaokrągla liczbę do najbliższej liczby całkowitej.”, “accepted_answers”: "Zaokrągla do najbliższej liczby całkowitej", "Zaokrągla liczbę", “explanation”: “Metoda round() zaokrągla liczbę do najbliższej wartości całkowitej.” }, { “id”: “q76”, “type”: “short_answer”, “question”: “Jaki będzie wynik działania Math.round(4.6)?”, “correct_answer”: “5”, “accepted_answers”: "5", “explanation”: “Liczba 4.6 zostaje zaokrąglona do 5.” }, { “id”: “q77”, “type”: “short_answer”, “question”: “Do czego służy metoda Math.sin(x)?”, “correct_answer”: “Oblicza sinus kąta podanego w radianach.”, “accepted_answers”: "Oblicza sinus", "Zwraca sinus kąta", “explanation”: “Metoda sin() oblicza sinus podanego kąta.” }, { “id”: “q78”, “type”: “short_answer”, “question”: “Jaką metodą obliczysz pierwiastek kwadratowy z liczby?”, “correct_answer”: “Math.sqrt(x)”, “accepted_answers”: "Math.sqrt(x)", "sqrt(x)", “explanation”: “Metoda sqrt() zwraca pierwiastek kwadratowy z podanej liczby.” }, { “id”: “q79”, “type”: “short_answer”, “question”: “Jaki będzie wynik działania Math.sqrt(25)?”, “correct_answer”: “5”, “accepted_answers”: "5", “explanation”: “Pierwiastek kwadratowy z 25 wynosi 5.” }, { “id”: “q80”, “type”: “short_answer”, “question”: “Do czego służy metoda Math.tan(x)?”, “correct_answer”: “Oblicza tangens kąta podanego w radianach.”, “accepted_answers”: "Oblicza tangens", "Zwraca tangens kąta", “explanation”: “Metoda tan() oblicza tangens podanego kąta.” }, { “id”: “q81”, “type”: “short_answer”, “question”: “Jak obliczyć pierwiastek piątego stopnia z liczby x za pomocą obiektu Math?”, “correct_answer”: “Math.pow(x, 1/5)”, “accepted_answers”: "Math.pow(x, 1/5)", "Math.pow(x,1/5)", “explanation”: “Pierwiastek piątego stopnia można obliczyć, podnosząc liczbę do potęgi 1/5.” }, { “id”: “q82”, “type”: “short_answer”, “question”: “Jaka metoda Math zwraca wartość bezwzględną liczby?”, “correct_answer”: “Math.abs()”, “accepted_answers”: "Math.abs()", "abs()", “explanation”: “Metoda abs() oblicza wartość bezwzględną.” }, { “id”: “q83”, “type”: “short_answer”, “question”: “Uzupełnij kod tak, aby wyświetlał liczbę pi: document.write(Math.);”, “correct_answer”: “PI”, “accepted_answers”: "PI", "Math.PI", “explanation”: “Stała PI przechowuje wartość liczby pi.” }, { “id”: “q84”, “type”: “short_answer”, “question”: “Uzupełnij kod tak, aby zaokrąglał liczbę 1.7 w górę: Math.(1.7);”, “correct_answer”: “ceil”, “accepted_answers”: "ceil", "Math.ceil", “explanation”: “Metoda ceil() zaokrągla liczbę w górę.” }, { “id”: “q85”, “type”: “short_answer”, “question”: “Uzupełnij kod tak, aby obliczał pierwiastek kwadratowy z 16: Math.(16);”, “correct_answer”: “sqrt”, “accepted_answers”: "sqrt", "Math.sqrt", “explanation”: “Metoda sqrt() oblicza pierwiastek kwadratowy.” }, { “id”: “q86”, “type”: “short_answer”, “question”: “Uzupełnij kod tak, aby zwracał największą z liczb 5, 10 i 2: Math.(5, 10, 2);”, “correct_answer”: “max”, “accepted_answers”: "max", "Math.max", “explanation”: “Metoda max() wybiera największą z podanych liczb.” }, { “id”: “q87”, “type”: “short_answer”, “question”: “Uzupełnij kod tak, aby zwracał losową liczbę: Math.____();”, “correct_answer”: “random”, “accepted_answers”: "random", "Math.random", “explanation”: “Metoda random() generuje losową liczbę.” }, { “id”: “q88”, “type”: “short_answer”, “question”: “Czym jest obiekt string?”, “correct_answer”: “Obiektem reprezentującym ciąg znaków ujęty w cudzysłów lub apostrof.”, “accepted_answers”: "Ciągiem znaków", "Tekstem zapisanym w cudzysłowie lub apostrofie", “explanation”: “Łańcuch znaków zapisujemy w cudzysłowie lub apostrofie.” }, { “id”: “q89”, “type”: “short_answer”, “question”: “Co zwraca właściwość length obiektu string?”, “correct_answer”: “Liczbę znaków w łańcuchu.”, “accepted_answers”: "Długość tekstu", "Liczbę znaków", “explanation”: “Właściwość length określa liczbę znaków w ciągu.” }, { “id”: “q90”, “type”: “short_answer”, “question”: “Jaki będzie wynik działania ‘Ala ma kota’.length?”, “correct_answer”: “11”, “accepted_answers”: "11", “explanation”: “Ciąg znaków Ala ma kota zawiera 11 znaków, licząc spacje.” }, { “id”: “q91”, “type”: “short_answer”, “question”: “Co robi metoda big()?”, “correct_answer”: “Zwiększa rozmiar czcionki tekstu.”, “accepted_answers”: "Powiększa tekst", "Zwiększa wielkość czcionki", “explanation”: “Metoda big() odpowiada znacznikowi HTML big.” }, { “id”: “q92”, “type”: “short_answer”, “question”: “Co robi metoda blink()?”, “correct_answer”: “Tworzy tekst migający.”, “accepted_answers”: "Powoduje miganie tekstu", "Wyświetla migający tekst", “explanation”: “Metoda blink() odpowiada znacznikowi blink.” }, { “id”: “q93”, “type”: “short_answer”, “question”: “Co robi metoda bold()?”, “correct_answer”: “Pogrubia tekst.”, “accepted_answers”: "Pogrubia tekst", "Ustawia tekst pogrubiony", “explanation”: “Metoda bold() odpowiada znacznikowi b.” }, { “id”: “q94”, “type”: “short_answer”, “question”: “Co robi metoda fixed()?”, “correct_answer”: “Ustawia tekst o stałej szerokości znaków.”, “accepted_answers”: "Ustawia stałą szerokość znaków", "Zmienia tekst na czcionkę o stałej szerokości", “explanation”: “Metoda fixed() odpowiada znacznikowi tt.” }, { “id”: “q95”, “type”: “short_answer”, “question”: “Co robi metoda italics()?”, “correct_answer”: “Ustawia tekst pisany kursywą.”, “accepted_answers”: "Pochyla tekst", "Ustawia kursywę", “explanation”: “Metoda italics() odpowiada znacznikowi i.” }, { “id”: “q96”, “type”: “short_answer”, “question”: “Co robi metoda small()?”, “correct_answer”: “Zmniejsza wielkość czcionki.”, “accepted_answers”: "Zmniejsza tekst", "Zmniejsza rozmiar czcionki", “explanation”: “Metoda small() odpowiada znacznikowi small.” }, { “id”: “q97”, “type”: “short_answer”, “question”: “Co robi metoda sub()?”, “correct_answer”: “Ustawia tekst jako indeks dolny.”, “accepted_answers”: "Tworzy indeks dolny", "Ustawia tekst w indeksie dolnym", “explanation”: “Metoda sub() odpowiada znacznikowi sub.” }, { “id”: “q98”, “type”: “short_answer”, “question”: “Co robi metoda strike()?”, “correct_answer”: “Przekreśla tekst.”, “accepted_answers”: "Przekreśla tekst", "Ustawia tekst przekreślony", “explanation”: “Metoda strike() odpowiada znacznikowi strike.” }, { “id”: “q99”, “type”: “short_answer”, “question”: “Co robi metoda sup()?”, “correct_answer”: “Ustawia tekst jako indeks górny.”, “accepted_answers”: "Tworzy indeks górny", "Ustawia tekst w indeksie górnym", “explanation”: “Metoda sup() odpowiada znacznikowi sup.” }, { “id”: “q100”, “type”: “short_answer”, “question”: “Do czego służy metoda fontColor(kolor)?”, “correct_answer”: “Ustawia kolor tekstu.”, “accepted_answers”: "Zmienia kolor tekstu", "Ustawia kolor czcionki", “explanation”: “Metoda fontColor() pozwala określić kolor tekstu.” }, { “id”: “q101”, “type”: “short_answer”, “question”: “Do czego służy metoda fontSize(rozmiar)?”, “correct_answer”: “Ustawia wielkość tekstu.”, “accepted_answers”: "Zmienia rozmiar tekstu", "Ustawia wielkość czcionki", “explanation”: “Metoda fontSize() określa wielkość tekstu.” }, { “id”: “q102”, “type”: “short_answer”, “question”: “Do czego służy metoda charAt(indeks)?”, “correct_answer”: “Zwraca znak znajdujący się na pozycji wskazanej przez indeks.”, “accepted_answers”: "Zwraca znak o podanym indeksie", "Pobiera znak z określonej pozycji", “explanation”: “Metoda charAt() zwraca znak z wybranej pozycji w łańcuchu.” }, { “id”: “q103”, “type”: “short_answer”, “question”: “Od jakiego numeru rozpoczyna się indeksowanie znaków w metodzie charAt()?”, “correct_answer”: “Od zera.”, “accepted_answers”: "0", "Od 0", "Od zera", “explanation”: “Pierwszy znak w łańcuchu znajduje się pod indeksem 0.” }, { “id”: “q104”, “type”: “short_answer”, “question”: “Jaki będzie wynik działania ‘Ala ma kota’.charAt(0)?”, “correct_answer”: “A”, “accepted_answers”: "A", "'A'", "\\"A\\"", “explanation”: “Pierwszy znak tekstu znajduje się pod indeksem 0.” }, { “id”: “q105”, “type”: “short_answer”, “question”: “Do czego służy metoda indexOf(‘podłańcuch’)?”, “correct_answer”: “Wyszukuje podłańcuch i zwraca indeks jego pierwszego wystąpienia.”, “accepted_answers”: "Zwraca indeks pierwszego wystąpienia tekstu", "Wyszukuje tekst i zwraca jego pozycję", “explanation”: “Metoda indexOf() wyszukuje podłańcuch i zwraca indeks pierwszego znalezionego wystąpienia.” }, { “id”: “q106”, “type”: “short_answer”, “question”: “Do czego służy metoda indexOf(‘podłańcuch’, index)?”, “correct_answer”: “Wyszukuje podłańcuch, rozpoczynając poszukiwanie od wskazanego indeksu.”, “accepted_answers”: "Wyszukuje tekst od podanego indeksu", "Zaczyna szukać od określonej pozycji", “explanation”: “Drugi argument określa indeks, od którego rozpoczyna się wyszukiwanie.” }, { “id”: “q107”, “type”: “short_answer”, “question”: “Do czego służy metoda lastIndexOf(‘podłańcuch’)?”, “correct_answer”: “Wyszukuje ostatnie wystąpienie podłańcucha, przeszukując tekst od końca.”, “accepted_answers”: "Zwraca indeks ostatniego wystąpienia tekstu", "Szuka podłańcucha od końca", “explanation”: “Metoda lastIndexOf() działa podobnie do indexOf(), ale szuka od końca ciągu.” }, { “id”: “q108”, “type”: “short_answer”, “question”: “Do czego służy metoda lastIndexOf(‘podłańcuch’, index)?”, “correct_answer”: “Wyszukuje podłańcuch od końca, uwzględniając wskazany indeks.”, “accepted_answers”: "Szuka tekstu od końca od wskazanego indeksu", "Przeszukuje łańcuch od końca z określonej pozycji", “explanation”: “Drugi argument określa indeks, od którego metoda rozpoczyna wyszukiwanie od końca.” }, { “id”: “q109”, “type”: “short_answer”, “question”: “Do czego służy metoda substring(x,y)?”, “correct_answer”: “Zwraca fragment łańcucha znaków od pozycji x do pozycji y.”, “accepted_answers”: "Wycina podłańcuch z tekstu", "Zwraca fragment tekstu z określonego zakresu", “explanation”: “Metoda substring() pobiera fragment tekstu wskazany przez dwa indeksy.” }, { “id”: “q110”, “type”: “short_answer”, “question”: “Od jakiego numeru liczone są pozycje w metodzie substring(x,y)?”, “correct_answer”: “Od zera.”, “accepted_answers”: "0", "Od 0", "Od zera", “explanation”: “Indeksy x i y są liczone od zera.” }, { “id”: “q111”, “type”: “short_answer”, “question”: “Do czego służy metoda toLowerCase()?”, “correct_answer”: “Zamienia wszystkie litery w łańcuchu na małe.”, “accepted_answers”: "Zmienia tekst na małe litery", "Konwertuje znaki na małe litery", “explanation”: “Metoda toLowerCase() zamienia litery tekstu na małe.” }, { “id”: “q112”, “type”: “short_answer”, “question”: “Do czego służy metoda toUpperCase()?”, “correct_answer”: “Zamienia wszystkie litery w łańcuchu na wielkie.”, “accepted_answers”: "Zmienia tekst na wielkie litery", "Konwertuje znaki na duże litery", “explanation”: “Metoda toUpperCase() zamienia litery tekstu na wielkie.” }, { “id”: “q113”, “type”: “short_answer”, “question”: “Jaki będzie wynik działania ‘Ala ma kota’.toUpperCase()?”, “correct_answer”: “ALA MA KOTA”, “accepted_answers”: "ALA MA KOTA", "'ALA MA KOTA'", "\\"ALA MA KOTA\\"", “explanation”: “Metoda toUpperCase() zamienia wszystkie litery na wielkie.” }, { “id”: “q114”, “type”: “short_answer”, “question”: “Napisz kod wyświetlający liczbę znaków w tekście ‘Ala ma kota’.”, “correct_answer”: “document.write(‘Ala ma kota’.length);”, “accepted_answers”: "document.write('Ala ma kota'.length);", "document.write(\\"Ala ma kota\\".length);", “explanation”: “Właściwość length zwraca liczbę znaków w łańcuchu.” }, { “id”: “q115”, “type”: “short_answer”, “question”: “Napisz kod wyświetlający tekst ‘Ala ma kota’ pogrubioną czcionką.”, “correct_answer”: “document.write(‘Ala ma kota’.bold());”, “accepted_answers”: "document.write('Ala ma kota'.bold());", "document.write(\\"Ala ma kota\\".bold());", “explanation”: “Metoda bold() formatuje tekst jako pogrubiony.” }, { “id”: “q116”, “type”: “short_answer”, “question”: “Napisz kod wyświetlający tekst ‘kota’ w kolorze #ccc, po tekście ‘Ala ma’.”, “correct_answer”: “document.write(‘Ala ma’ + ’ kota’.fontColor(’#ccc’));”, “accepted_answers”: "document.write('Ala ma' + ' kota'.fontColor('#ccc'));", "document.write('Ala ma' + ' kota'.fontcolor('#ccc'));", "document.write(\\"Ala ma\\" + \\" kota\\".fontcolor('#ccc'));", “explanation”: “Metoda fontColor() ustawia kolor tekstu, a operator + łączy łańcuchy znaków.” }, { “id”: “q117”, “type”: “short_answer”, “question”: “Napisz kod wyświetlający tekst ‘kota’ o rozmiarze czcionki 10, po tekście ‘Ala ma’.”, “correct_answer”: “document.write(‘Ala ma’ + ’ kota’.fontSize(10));”, “accepted_answers”: "document.write('Ala ma' + ' kota'.fontSize(10));", "document.write('Ala ma' + ' kota'.fontsize(10));", “explanation”: “Metoda fontSize() ustawia wielkość tekstu.” }, { “id”: “q118”, “type”: “short_answer”, “question”: “Jaki będzie wynik działania ‘Ala ma kota’.indexOf(‘a’)?”, “correct_answer”: “2”, “accepted_answers”: "2", “explanation”: “Pierwsza litera a znajduje się na indeksie 2, ponieważ indeksowanie zaczyna się od zera.” }, { “id”: “q119”, “type”: “short_answer”, “question”: “Jaki będzie wynik działania ‘Ala ma kota’.lastIndexOf(‘a’)?”, “correct_answer”: “10”, “accepted_answers”: "10", “explanation”: “Ostatnia litera a znajduje się na indeksie 10.” }, { “id”: “q120”, “type”: “short_answer”, “question”: “Napisz kod zamieniający tekst ‘Ala ma kota’ na wielkie litery i wyświetlający wynik.”, “correct_answer”: “document.write(‘Ala ma kota’.toUpperCase());”, “accepted_answers”: "document.write('Ala ma kota'.toUpperCase());", "document.write(\\"Ala ma kota\\".toUpperCase());", “explanation”: “Metoda toUpperCase() zamienia wszystkie litery na wielkie, a document.write() wyświetla wynik.” } ] }
+{
+  "subject": "HTML",
+  "section": "JavaScript",
+  "topic": "Obiekty wbudowane",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "command_meaning",
+      "question": "Jak nazywamy cechy charakterystyczne obiektu?",
+      "correct_answer": "właściwości",
+      "accepted_answers": [
+        "właściwości",
+        "właściwość",
+        "własności"
+      ],
+      "explanation": "Cechy obiektu to jego właściwości (własności). Mogą być zmiennymi lub innymi obiektami.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q2",
+      "type": "command_meaning",
+      "question": "Jak nazywamy funkcje, które potrafi wykonywać obiekt?",
+      "correct_answer": "metody",
+      "accepted_answers": [
+        "metody",
+        "metoda"
+      ],
+      "explanation": "Funkcje obiektu nazywamy metodami.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q3",
+      "type": "command_meaning",
+      "question": "Jak nazywa się specjalna funkcja służąca do definiowania obiektu?",
+      "correct_answer": "konstruktor",
+      "accepted_answers": [
+        "konstruktor",
+        "funkcja konstruktora"
+      ],
+      "explanation": "Obiekt definiujemy, tworząc specjalną funkcję zwaną konstruktorem.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q4",
+      "type": "write_command",
+      "question": "Jakim operatorem tworzymy obiekt na podstawie konstruktora?",
+      "correct_answer": "new",
+      "accepted_answers": [
+        "new",
+        "operator new"
+      ],
+      "explanation": "Obiekt tworzymy operatorem new.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q5",
+      "type": "command_meaning",
+      "question": "Do czego służy obiekt document?",
+      "correct_answer": "Do modyfikacji dokumentu HTML wczytanego przez przeglądarkę",
+      "accepted_answers": [
+        "Do modyfikacji dokumentu HTML wczytanego przez przeglądarkę",
+        "do modyfikacji dokumentu HTML",
+        "modyfikuje dokument HTML aktualnie wczytany przez przeglądarkę"
+      ],
+      "explanation": "Obiekt document udostępnia metody i właściwości do modyfikacji aktualnego dokumentu HTML.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q6",
+      "type": "write_command",
+      "question": "Jaką metodą obiektu document wypiszesz tekst lub kod HTML w dokumencie?",
+      "correct_answer": "document.write()",
+      "accepted_answers": [
+        "document.write()",
+        "write()",
+        "document.write",
+        "write"
+      ],
+      "explanation": "Metoda write() wypisuje wyrażenie HTML w dokumencie w bieżącym oknie.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q7",
+      "type": "command_meaning",
+      "question": "Co robi metoda document.clear()?",
+      "correct_answer": "Czyści zawartość bieżącego okna",
+      "accepted_answers": [
+        "Czyści zawartość bieżącego okna",
+        "czyści okno",
+        "czyści zawartość okna"
+      ],
+      "explanation": "Metoda clear() czyści zawartość bieżącego okna.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q8",
+      "type": "command_meaning",
+      "question": "Co robi metoda document.close()?",
+      "correct_answer": "Zamyka bieżące okno",
+      "accepted_answers": [
+        "Zamyka bieżące okno",
+        "zamyka okno"
+      ],
+      "explanation": "Metoda close() zamyka bieżące okno (według notatek).",
+      "case_sensitive": false
+    },
+    {
+      "id": "q9",
+      "type": "write_command",
+      "question": "Jaką właściwością obiektu document pobierzesz tytuł dokumentu?",
+      "correct_answer": "document.title",
+      "accepted_answers": [
+        "document.title",
+        "title"
+      ],
+      "explanation": "Właściwość title zawiera tytuł dokumentu.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q10",
+      "type": "code_output",
+      "question": "Jaką wartość ma document.title, jeśli tytuł dokumentu nie został zdefiniowany?",
+      "correct_answer": "null",
+      "accepted_answers": [
+        "null"
+      ],
+      "explanation": "Gdy tytuł nie jest zdefiniowany, title ma wartość null.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q11",
+      "type": "write_command",
+      "question": "Jaką właściwością obiektu document pobierzesz pełny adres URL otwartego dokumentu?",
+      "correct_answer": "document.location",
+      "accepted_answers": [
+        "document.location",
+        "location"
+      ],
+      "explanation": "Właściwość location zawiera pełny adres URL aktualnie otwartego dokumentu.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q12",
+      "type": "command_meaning",
+      "question": "Co zawiera właściwość document.lastModified?",
+      "correct_answer": "Datę ostatniej modyfikacji dokumentu",
+      "accepted_answers": [
+        "Datę ostatniej modyfikacji dokumentu",
+        "data ostatniej modyfikacji",
+        "datę ostatniej modyfikacji"
+      ],
+      "explanation": "lastModified to łańcuch z datą ostatniej modyfikacji dokumentu.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q13",
+      "type": "command_meaning",
+      "question": "Co zawiera właściwość document.referrer?",
+      "correct_answer": "Adres URL, spod którego wywołano bieżący dokument",
+      "accepted_answers": [
+        "Adres URL, spod którego wywołano bieżący dokument",
+        "adres strony, z której wywołano dokument",
+        "adres URL strony poprzedniej"
+      ],
+      "explanation": "referrer wskazuje adres, spod którego został wywołany bieżący dokument.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q14",
+      "type": "write_command",
+      "question": "Jaką właściwością document ustawisz tło dokumentu?",
+      "correct_answer": "bgcolor",
+      "accepted_answers": [
+        "bgcolor",
+        "document.bgcolor"
+      ],
+      "explanation": "bgcolor określa tło dokumentu.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q15",
+      "type": "write_command",
+      "question": "Jaką właściwością document ustawisz kolor tekstu?",
+      "correct_answer": "fgcolor",
+      "accepted_answers": [
+        "fgcolor",
+        "document.fgcolor"
+      ],
+      "explanation": "fgcolor określa kolor tekstu.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q16",
+      "type": "write_command",
+      "question": "Jaką właściwością document ustawisz kolor odsyłaczy (linków)?",
+      "correct_answer": "linkcolor",
+      "accepted_answers": [
+        "linkcolor",
+        "document.linkcolor"
+      ],
+      "explanation": "linkcolor określa kolor odsyłaczy.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q17",
+      "type": "write_command",
+      "question": "Jaką właściwością document ustawisz kolor odsyłaczy odwiedzonych?",
+      "correct_answer": "vlinkcolor",
+      "accepted_answers": [
+        "vlinkcolor",
+        "document.vlinkcolor"
+      ],
+      "explanation": "vlinkcolor określa kolor odsyłaczy odwiedzonych (v = visited).",
+      "case_sensitive": true
+    },
+    {
+      "id": "q18",
+      "type": "write_command",
+      "question": "Jaką właściwością document ustawisz kolor odsyłaczy aktywnych?",
+      "correct_answer": "alinkcolor",
+      "accepted_answers": [
+        "alinkcolor",
+        "document.alinkcolor"
+      ],
+      "explanation": "alinkcolor określa kolor odsyłaczy aktywnych (a = active).",
+      "case_sensitive": true
+    },
+    {
+      "id": "q19",
+      "type": "command_meaning",
+      "question": "Co zawiera tablica document.forms[]?",
+      "correct_answer": "Pozycję każdego formularza w dokumencie",
+      "accepted_answers": [
+        "Pozycję każdego formularza w dokumencie",
+        "formularze",
+        "pozycje formularzy"
+      ],
+      "explanation": "Tablica forms[] zawiera pozycję każdego formularza.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q20",
+      "type": "command_meaning",
+      "question": "Co przechowuje właściwość forms.length?",
+      "correct_answer": "Liczbę formularzy w dokumencie",
+      "accepted_answers": [
+        "Liczbę formularzy w dokumencie",
+        "liczbę formularzy",
+        "ilość formularzy"
+      ],
+      "explanation": "Właściwość length przechowuje liczbę formularzy w dokumencie.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q21",
+      "type": "command_meaning",
+      "question": "Co zawiera tablica document.links[]?",
+      "correct_answer": "Pozycję każdego obiektu area i link",
+      "accepted_answers": [
+        "Pozycję każdego obiektu area i link",
+        "odsyłacze i obiekty area",
+        "pozycje linków i obiektów area"
+      ],
+      "explanation": "links[] zawiera pozycję każdego obiektu area i link.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q22",
+      "type": "command_meaning",
+      "question": "Co przechowuje właściwość links.length?",
+      "correct_answer": "Liczbę odsyłaczy (obiektów link i area) w dokumencie",
+      "accepted_answers": [
+        "Liczbę odsyłaczy (obiektów link i area) w dokumencie",
+        "liczbę odsyłaczy",
+        "liczbę linków"
+      ],
+      "explanation": "links.length to liczba odsyłaczy (obiektów link i area).",
+      "case_sensitive": false
+    },
+    {
+      "id": "q23",
+      "type": "command_meaning",
+      "question": "Co zawiera tablica document.anchors[]?",
+      "correct_answer": "Pozycję każdego zakotwiczenia",
+      "accepted_answers": [
+        "Pozycję każdego zakotwiczenia",
+        "zakotwiczenia",
+        "pozycje zakotwiczeń"
+      ],
+      "explanation": "anchors[] zawiera pozycję każdego zakotwiczenia.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q24",
+      "type": "command_meaning",
+      "question": "Co przechowuje właściwość anchors.length?",
+      "correct_answer": "Liczbę zakotwiczeń w dokumencie",
+      "accepted_answers": [
+        "Liczbę zakotwiczeń w dokumencie",
+        "liczbę zakotwiczeń",
+        "ilość zakotwiczeń"
+      ],
+      "explanation": "anchors.length to liczba zakotwiczeń w dokumencie.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q25",
+      "type": "write_code",
+      "question": "Napisz kod, który wyświetli tytuł dokumentu.",
+      "correct_answer": "document.write(document.title);",
+      "accepted_answers": [
+        "document.write(document.title);"
+      ],
+      "explanation": "title pobiera tytuł, a write() wypisuje go w dokumencie.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q26",
+      "type": "write_code",
+      "question": "Napisz kod, który wyświetli adres URL dokumentu przez document.location.",
+      "correct_answer": "document.write(document.location);",
+      "accepted_answers": [
+        "document.write(document.location);"
+      ],
+      "explanation": "location zwraca adres URL dokumentu.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q27",
+      "type": "write_code",
+      "question": "Napisz kod, który wyświetli liczbę odsyłaczy w dokumencie.",
+      "correct_answer": "document.write(document.links.length);",
+      "accepted_answers": [
+        "document.write(document.links.length);"
+      ],
+      "explanation": "links.length zwraca liczbę odsyłaczy.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q28",
+      "type": "fill_code",
+      "question": "Uzupełnij kod, aby wyświetlał tytuł dokumentu: document.write(document.____);",
+      "correct_answer": "title",
+      "accepted_answers": [
+        "title",
+        "document.title"
+      ],
+      "explanation": "Tytuł dokumentu zwraca właściwość title.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q29",
+      "type": "command_meaning",
+      "question": "Do czego służy obiekt location?",
+      "correct_answer": "Przechowuje informacje o aktualnym adresie URL i pozwala nim operować",
+      "accepted_answers": [
+        "Przechowuje informacje o aktualnym adresie URL i pozwala nim operować",
+        "do operowania adresem URL",
+        "informacje o adresie URL dokumentu"
+      ],
+      "explanation": "location zawiera informacje o adresie URL oraz metody do operowania nim.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q30",
+      "type": "write_command",
+      "question": "Jaką właściwością location pobierzesz cały adres URL dokumentu?",
+      "correct_answer": "location.href",
+      "accepted_answers": [
+        "location.href",
+        "href"
+      ],
+      "explanation": "href zawiera cały adres URL.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q31",
+      "type": "command_meaning",
+      "question": "Co zawiera właściwość location.protocol?",
+      "correct_answer": "Początek adresu URL wraz z pierwszym dwukropkiem",
+      "accepted_answers": [
+        "Początek adresu URL wraz z pierwszym dwukropkiem",
+        "protokół",
+        "protokół z dwukropkiem"
+      ],
+      "explanation": "protocol zawiera początek adresu URL, np. https:.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q32",
+      "type": "command_meaning",
+      "question": "Co zawiera właściwość location.host według notatek?",
+      "correct_answer": "Nazwę serwera i nazwę domeny",
+      "accepted_answers": [
+        "Nazwę serwera i nazwę domeny",
+        "nazwę serwera",
+        "nazwę domeny"
+      ],
+      "explanation": "Według notatek host zawiera nazwę serwera i domeny.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q33",
+      "type": "command_meaning",
+      "question": "Co zawiera właściwość location.hostname według notatek?",
+      "correct_answer": "Pełną nazwę serwera łącznie z numerem portu",
+      "accepted_answers": [
+        "Pełną nazwę serwera łącznie z numerem portu",
+        "nazwę serwera z numerem portu"
+      ],
+      "explanation": "Tak definiują ją notatki. W praktyce host zawiera port, a hostname nie.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q34",
+      "type": "command_meaning",
+      "question": "Co określa właściwość location.port?",
+      "correct_answer": "Port komunikacyjny serwera",
+      "accepted_answers": [
+        "Port komunikacyjny serwera",
+        "port serwera",
+        "numer portu"
+      ],
+      "explanation": "port określa port komunikacyjny serwera.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q35",
+      "type": "write_command",
+      "question": "Jaką właściwością location pobierzesz ścieżkę z adresu URL?",
+      "correct_answer": "location.pathname",
+      "accepted_answers": [
+        "location.pathname",
+        "pathname"
+      ],
+      "explanation": "pathname zawiera część adresu URL ze ścieżką.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q36",
+      "type": "write_command",
+      "question": "Od jakiego znaku zaczyna się wartość location.hash?",
+      "correct_answer": "#",
+      "accepted_answers": [
+        "#",
+        "znak #"
+      ],
+      "explanation": "hash zaczyna się od # i określa nazwę zakotwiczenia.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q37",
+      "type": "command_meaning",
+      "question": "Co określa właściwość location.hash?",
+      "correct_answer": "Nazwę zakotwiczenia w dokumencie",
+      "accepted_answers": [
+        "Nazwę zakotwiczenia w dokumencie",
+        "zakotwiczenie",
+        "nazwę zakotwiczenia"
+      ],
+      "explanation": "hash określa nazwę zakotwiczenia w dokumencie.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q38",
+      "type": "write_command",
+      "question": "Od jakiego znaku zaczyna się wartość location.search?",
+      "correct_answer": "?",
+      "accepted_answers": [
+        "?",
+        "znak ?",
+        "znak zapytania"
+      ],
+      "explanation": "search zaczyna się od ?.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q39",
+      "type": "command_meaning",
+      "question": "Co określa właściwość location.search?",
+      "correct_answer": "Zapytanie w adresie URL",
+      "accepted_answers": [
+        "Zapytanie w adresie URL",
+        "zapytanie",
+        "parametry zapytania"
+      ],
+      "explanation": "search określa zapytanie w adresie URL.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q40",
+      "type": "command_meaning",
+      "question": "Co robi metoda location.assign(url)?",
+      "correct_answer": "Wczytuje dokument o adresie wskazanym przez url",
+      "accepted_answers": [
+        "Wczytuje dokument o adresie wskazanym przez url",
+        "wczytuje stronę z podanego adresu",
+        "przechodzi pod adres url"
+      ],
+      "explanation": "assign(url) wczytuje dokument wskazany adresem.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q41",
+      "type": "command_meaning",
+      "question": "Co robi metoda location.reload(force)?",
+      "correct_answer": "Wymusza ponowne wczytanie bieżącej strony",
+      "accepted_answers": [
+        "Wymusza ponowne wczytanie bieżącej strony",
+        "odświeża stronę",
+        "ponownie wczytuje stronę"
+      ],
+      "explanation": "reload() wczytuje bieżącą stronę ponownie.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q42",
+      "type": "command_meaning",
+      "question": "Co robi metoda location.replace(url)?",
+      "correct_answer": "Zastępuje bieżący dokument dokumentem wczytanym spod adresu url",
+      "accepted_answers": [
+        "Zastępuje bieżący dokument dokumentem wczytanym spod adresu url",
+        "zastępuje bieżącą stronę",
+        "zastępuje bieżący dokument"
+      ],
+      "explanation": "replace(url) zastępuje bieżący dokument wskazanym.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q43",
+      "type": "write_code",
+      "question": "Napisz kod, który wyświetli cały adres URL za pomocą obiektu location.",
+      "correct_answer": "document.write(location.href);",
+      "accepted_answers": [
+        "document.write(location.href);"
+      ],
+      "explanation": "href zawiera cały adres URL.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q44",
+      "type": "write_code",
+      "question": "Napisz kod, który wyświetli protokół adresu URL.",
+      "correct_answer": "document.write(location.protocol);",
+      "accepted_answers": [
+        "document.write(location.protocol);"
+      ],
+      "explanation": "protocol zwraca protokół.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q45",
+      "type": "write_code",
+      "question": "Napisz kod, który wyświetli nazwę serwera i domenę (host).",
+      "correct_answer": "document.write(location.host);",
+      "accepted_answers": [
+        "document.write(location.host);"
+      ],
+      "explanation": "host zawiera nazwę serwera i domeny.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q46",
+      "type": "write_code",
+      "question": "Napisz kod, który wyświetli ścieżkę adresu URL.",
+      "correct_answer": "document.write(location.pathname);",
+      "accepted_answers": [
+        "document.write(location.pathname);"
+      ],
+      "explanation": "pathname zawiera ścieżkę adresu URL.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q47",
+      "type": "command_meaning",
+      "question": "Do czego służy obiekt Math?",
+      "correct_answer": "Do wykonywania obliczeń matematycznych i udostępniania stałych matematycznych",
+      "accepted_answers": [
+        "Do wykonywania obliczeń matematycznych i udostępniania stałych matematycznych",
+        "do obliczeń matematycznych",
+        "do obliczeń"
+      ],
+      "explanation": "Math wykonuje obliczenia i udostępnia stałe matematyczne.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q48",
+      "type": "write_command",
+      "question": "Jaką właściwością Math pobierzesz liczbę Eulera?",
+      "correct_answer": "Math.E",
+      "accepted_answers": [
+        "Math.E",
+        "E"
+      ],
+      "explanation": "Math.E to liczba Eulera.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q49",
+      "type": "code_output",
+      "question": "Jaka jest przybliżona wartość Math.E?",
+      "correct_answer": "2,718",
+      "accepted_answers": [
+        "2,718",
+        "2.718",
+        "ok. 2,718",
+        "ok. 2.718"
+      ],
+      "explanation": "Liczba Eulera to około 2,718.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q50",
+      "type": "write_command",
+      "question": "Jaką właściwością Math pobierzesz logarytm naturalny z 2?",
+      "correct_answer": "Math.LN2",
+      "accepted_answers": [
+        "Math.LN2",
+        "LN2"
+      ],
+      "explanation": "LN2 to logarytm naturalny z 2 (ok. 0,693).",
+      "case_sensitive": true
+    },
+    {
+      "id": "q51",
+      "type": "write_command",
+      "question": "Jaką właściwością Math pobierzesz logarytm naturalny z 10?",
+      "correct_answer": "Math.LN10",
+      "accepted_answers": [
+        "Math.LN10",
+        "LN10"
+      ],
+      "explanation": "LN10 to logarytm naturalny z 10 (ok. 2,302).",
+      "case_sensitive": true
+    },
+    {
+      "id": "q52",
+      "type": "write_command",
+      "question": "Jaką właściwością Math pobierzesz logarytm o podstawie 2 z liczby e?",
+      "correct_answer": "Math.LOG2E",
+      "accepted_answers": [
+        "Math.LOG2E",
+        "LOG2E"
+      ],
+      "explanation": "LOG2E to ok. 1,442.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q53",
+      "type": "write_command",
+      "question": "Jaką właściwością Math pobierzesz logarytm o podstawie 10 z liczby e?",
+      "correct_answer": "Math.LOG10E",
+      "accepted_answers": [
+        "Math.LOG10E",
+        "LOG10E"
+      ],
+      "explanation": "LOG10E to ok. 0,434.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q54",
+      "type": "write_command",
+      "question": "Jaką właściwością Math pobierzesz liczbę pi?",
+      "correct_answer": "Math.PI",
+      "accepted_answers": [
+        "Math.PI",
+        "PI"
+      ],
+      "explanation": "PI to liczba pi (ok. 3,1415).",
+      "case_sensitive": true
+    },
+    {
+      "id": "q55",
+      "type": "write_command",
+      "question": "Jaką właściwością Math pobierzesz pierwiastek z 1/2?",
+      "correct_answer": "Math.SQRT1_2",
+      "accepted_answers": [
+        "Math.SQRT1_2",
+        "SQRT1_2"
+      ],
+      "explanation": "SQRT1_2 to ok. 0,707.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q56",
+      "type": "write_command",
+      "question": "Jaką właściwością Math pobierzesz pierwiastek z 2?",
+      "correct_answer": "Math.SQRT2",
+      "accepted_answers": [
+        "Math.SQRT2",
+        "SQRT2"
+      ],
+      "explanation": "SQRT2 to ok. 1,414.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q57",
+      "type": "code_output",
+      "question": "Jaka jest przybliżona wartość Math.PI według notatek?",
+      "correct_answer": "3,1415",
+      "accepted_answers": [
+        "3,1415",
+        "3.1415",
+        "ok. 3,1415",
+        "ok. 3.1415"
+      ],
+      "explanation": "Notatki podają ok. 3,1415.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q58",
+      "type": "write_command",
+      "question": "Jaką metodą Math obliczysz wartość bezwzględną z x?",
+      "correct_answer": "Math.abs(x)",
+      "accepted_answers": [
+        "Math.abs(x)",
+        "abs(x)",
+        "Math.abs()",
+        "abs()"
+      ],
+      "explanation": "abs(x) zwraca wartość absolutną.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q59",
+      "type": "code_output",
+      "question": "Jaki będzie wynik Math.abs(-10)?",
+      "correct_answer": "10",
+      "accepted_answers": [
+        "10"
+      ],
+      "explanation": "Wartość bezwzględna z -10 to 10.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q60",
+      "type": "command_meaning",
+      "question": "Co oblicza metoda Math.acos(x)?",
+      "correct_answer": "Arcus cosinus z x",
+      "accepted_answers": [
+        "Arcus cosinus z x",
+        "arcus cosinus"
+      ],
+      "explanation": "x podajemy w radianach.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q61",
+      "type": "command_meaning",
+      "question": "Co oblicza metoda Math.asin(x)?",
+      "correct_answer": "Arcus sinus z x",
+      "accepted_answers": [
+        "Arcus sinus z x",
+        "arcus sinus"
+      ],
+      "explanation": "x podajemy w radianach.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q62",
+      "type": "command_meaning",
+      "question": "Co oblicza metoda Math.atan(x)?",
+      "correct_answer": "Arcus tangens z x",
+      "accepted_answers": [
+        "Arcus tangens z x",
+        "arcus tangens"
+      ],
+      "explanation": "Wynik jest z przedziału od -pi/2 do pi/2 w radianach.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q63",
+      "type": "command_meaning",
+      "question": "Co oblicza metoda Math.atan2(y,x)?",
+      "correct_answer": "Arcus tangens dla punktów y i x",
+      "accepted_answers": [
+        "Arcus tangens dla punktów y i x",
+        "arcus tangens dla y i x"
+      ],
+      "explanation": "Według notatek zwraca wartość z przedziału od 0 do 2pi w radianach.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q64",
+      "type": "command_meaning",
+      "question": "Co robi metoda Math.ceil(x)?",
+      "correct_answer": "Zaokrągla x w górę do najbliższej liczby całkowitej",
+      "accepted_answers": [
+        "Zaokrągla x w górę do najbliższej liczby całkowitej",
+        "zaokrągla w górę"
+      ],
+      "explanation": "ceil() zaokrągla w górę.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q65",
+      "type": "code_output",
+      "question": "Jaki będzie wynik Math.ceil(1.7)?",
+      "correct_answer": "2",
+      "accepted_answers": [
+        "2"
+      ],
+      "explanation": "1,7 zaokrąglone w górę to 2.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q66",
+      "type": "command_meaning",
+      "question": "Co oblicza metoda Math.cos(x)?",
+      "correct_answer": "Cosinus z x",
+      "accepted_answers": [
+        "Cosinus z x",
+        "cosinus"
+      ],
+      "explanation": "x podajemy w radianach.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q67",
+      "type": "command_meaning",
+      "question": "Co zwraca metoda Math.exp(x)?",
+      "correct_answer": "Wartość e do potęgi x",
+      "accepted_answers": [
+        "Wartość e do potęgi x",
+        "e do potęgi x",
+        "e^x"
+      ],
+      "explanation": "exp(x) to e podniesione do potęgi x.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q68",
+      "type": "command_meaning",
+      "question": "Co robi metoda Math.floor(x)?",
+      "correct_answer": "Zaokrągla x w dół do najbliższej liczby całkowitej",
+      "accepted_answers": [
+        "Zaokrągla x w dół do najbliższej liczby całkowitej",
+        "zaokrągla w dół"
+      ],
+      "explanation": "floor() zaokrągla w dół.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q69",
+      "type": "code_output",
+      "question": "Jaki będzie wynik Math.floor(1.7)?",
+      "correct_answer": "1",
+      "accepted_answers": [
+        "1"
+      ],
+      "explanation": "1,7 zaokrąglone w dół to 1.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q70",
+      "type": "command_meaning",
+      "question": "Co zwraca metoda Math.log(x)?",
+      "correct_answer": "Logarytm naturalny (o podstawie e) z x",
+      "accepted_answers": [
+        "Logarytm naturalny (o podstawie e) z x",
+        "logarytm naturalny"
+      ],
+      "explanation": "log(x) to logarytm naturalny.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q71",
+      "type": "code_output",
+      "question": "Jaki będzie wynik Math.log(1)?",
+      "correct_answer": "0",
+      "accepted_answers": [
+        "0"
+      ],
+      "explanation": "Logarytm naturalny z 1 to 0.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q72",
+      "type": "command_meaning",
+      "question": "Co zwraca metoda Math.max(x, y, z, ..., n)?",
+      "correct_answer": "Największą liczbę z podanych",
+      "accepted_answers": [
+        "Największą liczbę z podanych",
+        "największą liczbę",
+        "największą wartość"
+      ],
+      "explanation": "max() wybiera największą.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q73",
+      "type": "code_output",
+      "question": "Jaki będzie wynik Math.max(100, 1, 2, 6, -5)?",
+      "correct_answer": "100",
+      "accepted_answers": [
+        "100"
+      ],
+      "explanation": "Największa jest 100.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q74",
+      "type": "command_meaning",
+      "question": "Co zwraca metoda Math.min(x, y, z, ..., n)?",
+      "correct_answer": "Najmniejszą liczbę z podanych",
+      "accepted_answers": [
+        "Najmniejszą liczbę z podanych",
+        "najmniejszą liczbę",
+        "najmniejszą wartość"
+      ],
+      "explanation": "min() wybiera najmniejszą.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q75",
+      "type": "write_command",
+      "question": "Jaką metodą Math podniesiesz x do potęgi y?",
+      "correct_answer": "Math.pow(x,y)",
+      "accepted_answers": [
+        "Math.pow(x,y)",
+        "pow(x,y)"
+      ],
+      "explanation": "pow(x,y) zwraca x do potęgi y.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q76",
+      "type": "code_output",
+      "question": "Jaki będzie wynik Math.pow(2,3)?",
+      "correct_answer": "8",
+      "accepted_answers": [
+        "8"
+      ],
+      "explanation": "2 do potęgi 3 to 8.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q77",
+      "type": "command_meaning",
+      "question": "Co zwraca metoda Math.random()?",
+      "correct_answer": "Liczbę losową z przedziału od 0 do 1",
+      "accepted_answers": [
+        "Liczbę losową z przedziału od 0 do 1",
+        "liczbę losową",
+        "losową liczbę od 0 do 1"
+      ],
+      "explanation": "random() losuje liczbę z przedziału 0–1.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q78",
+      "type": "command_meaning",
+      "question": "Co robi metoda Math.round(x)?",
+      "correct_answer": "Zaokrągla x do najbliższej wartości całkowitej",
+      "accepted_answers": [
+        "Zaokrągla x do najbliższej wartości całkowitej",
+        "zaokrągla do najbliższej liczby całkowitej",
+        "zaokrągla liczbę"
+      ],
+      "explanation": "round() zaokrągla do najbliższej całkowitej.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q79",
+      "type": "code_output",
+      "question": "Jaki będzie wynik Math.round(4.6)?",
+      "correct_answer": "5",
+      "accepted_answers": [
+        "5"
+      ],
+      "explanation": "4,6 zaokrągla się do 5.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q80",
+      "type": "command_meaning",
+      "question": "Co oblicza metoda Math.sin(x)?",
+      "correct_answer": "Sinus z x",
+      "accepted_answers": [
+        "Sinus z x",
+        "sinus"
+      ],
+      "explanation": "x podajemy w radianach.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q81",
+      "type": "write_command",
+      "question": "Jaką metodą Math obliczysz pierwiastek kwadratowy z x?",
+      "correct_answer": "Math.sqrt(x)",
+      "accepted_answers": [
+        "Math.sqrt(x)",
+        "sqrt(x)"
+      ],
+      "explanation": "sqrt(x) zwraca pierwiastek kwadratowy.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q82",
+      "type": "code_output",
+      "question": "Jaki będzie wynik Math.sqrt(25)?",
+      "correct_answer": "5",
+      "accepted_answers": [
+        "5"
+      ],
+      "explanation": "Pierwiastek z 25 to 5.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q83",
+      "type": "command_meaning",
+      "question": "Co oblicza metoda Math.tan(x)?",
+      "correct_answer": "Tangens z x",
+      "accepted_answers": [
+        "Tangens z x",
+        "tangens"
+      ],
+      "explanation": "x podajemy w radianach.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q84",
+      "type": "write_code",
+      "question": "Napisz wyrażenie liczące pierwiastek 5 stopnia z x za pomocą Math.",
+      "correct_answer": "Math.pow(x, 1/5)",
+      "accepted_answers": [
+        "Math.pow(x, 1/5)",
+        "Math.pow(x,1/5)"
+      ],
+      "explanation": "Pierwiastek n-tego stopnia to potęga 1/n.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q85",
+      "type": "fill_code",
+      "question": "Uzupełnij kod, aby wyświetlał liczbę pi: document.write(Math.____);",
+      "correct_answer": "PI",
+      "accepted_answers": [
+        "PI",
+        "Math.PI"
+      ],
+      "explanation": "Stała PI przechowuje liczbę pi.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q86",
+      "type": "fill_code",
+      "question": "Uzupełnij kod, aby zaokrąglał 1.7 w górę: Math.____(1.7);",
+      "correct_answer": "ceil",
+      "accepted_answers": [
+        "ceil",
+        "Math.ceil"
+      ],
+      "explanation": "ceil() zaokrągla w górę.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q87",
+      "type": "fill_code",
+      "question": "Uzupełnij kod, aby obliczał pierwiastek z 16: Math.____(16);",
+      "correct_answer": "sqrt",
+      "accepted_answers": [
+        "sqrt",
+        "Math.sqrt"
+      ],
+      "explanation": "sqrt() oblicza pierwiastek kwadratowy.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q88",
+      "type": "fill_code",
+      "question": "Uzupełnij kod, aby zwracał największą z liczb 5, 10, 2: Math.____(5, 10, 2);",
+      "correct_answer": "max",
+      "accepted_answers": [
+        "max",
+        "Math.max"
+      ],
+      "explanation": "max() wybiera największą liczbę.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q89",
+      "type": "command_meaning",
+      "question": "Czym jest obiekt string?",
+      "correct_answer": "Każdym ciągiem znaków ujętym w cudzysłów lub apostrof",
+      "accepted_answers": [
+        "Każdym ciągiem znaków ujętym w cudzysłów lub apostrof",
+        "ciągiem znaków",
+        "łańcuchem znaków"
+      ],
+      "explanation": "String to ciąg znaków w cudzysłowie lub apostrofie.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q90",
+      "type": "write_command",
+      "question": "Jaką właściwością sprawdzisz liczbę znaków w łańcuchu?",
+      "correct_answer": "length",
+      "accepted_answers": [
+        "length",
+        ".length"
+      ],
+      "explanation": "length zwraca liczbę znaków.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q91",
+      "type": "code_output",
+      "question": "Jaki będzie wynik 'Ala ma kota'.length?",
+      "correct_answer": "11",
+      "accepted_answers": [
+        "11"
+      ],
+      "explanation": "Napis ma 11 znaków wraz ze spacjami.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q92",
+      "type": "command_meaning",
+      "question": "Co robi metoda big()?",
+      "correct_answer": "Zwiększa rozmiar czcionki",
+      "accepted_answers": [
+        "Zwiększa rozmiar czcionki",
+        "powiększa tekst"
+      ],
+      "explanation": "Odpowiednik znacznika <big>.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q93",
+      "type": "command_meaning",
+      "question": "Co robi metoda blink()?",
+      "correct_answer": "Tworzy tekst migający",
+      "accepted_answers": [
+        "Tworzy tekst migający",
+        "miganie tekstu",
+        "tekst migający"
+      ],
+      "explanation": "Odpowiednik znacznika <blink>.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q94",
+      "type": "command_meaning",
+      "question": "Co robi metoda bold()?",
+      "correct_answer": "Pogrubia tekst",
+      "accepted_answers": [
+        "Pogrubia tekst",
+        "tekst pogrubiony"
+      ],
+      "explanation": "Odpowiednik znacznika <b>.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q95",
+      "type": "command_meaning",
+      "question": "Co robi metoda fixed()?",
+      "correct_answer": "Ustawia tekst o stałej szerokości znaku",
+      "accepted_answers": [
+        "Ustawia tekst o stałej szerokości znaku",
+        "tekst o stałej szerokości znaku",
+        "stała szerokość znaków"
+      ],
+      "explanation": "Odpowiednik znacznika <tt>.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q96",
+      "type": "command_meaning",
+      "question": "Co robi metoda italics()?",
+      "correct_answer": "Ustawia tekst pisany kursywą",
+      "accepted_answers": [
+        "Ustawia tekst pisany kursywą",
+        "kursywa",
+        "pochyla tekst"
+      ],
+      "explanation": "Odpowiednik znacznika <i>.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q97",
+      "type": "command_meaning",
+      "question": "Co robi metoda small()?",
+      "correct_answer": "Zmniejsza wielkość czcionki",
+      "accepted_answers": [
+        "Zmniejsza wielkość czcionki",
+        "zmniejsza tekst"
+      ],
+      "explanation": "Odpowiednik znacznika <small>.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q98",
+      "type": "command_meaning",
+      "question": "Co robi metoda sub()?",
+      "correct_answer": "Ustawia tekst jako indeks dolny",
+      "accepted_answers": [
+        "Ustawia tekst jako indeks dolny",
+        "indeks dolny"
+      ],
+      "explanation": "Odpowiednik znacznika <sub>.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q99",
+      "type": "command_meaning",
+      "question": "Co robi metoda strike()?",
+      "correct_answer": "Przekreśla tekst",
+      "accepted_answers": [
+        "Przekreśla tekst",
+        "tekst przekreślony"
+      ],
+      "explanation": "Odpowiednik znacznika <strike>.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q100",
+      "type": "command_meaning",
+      "question": "Co robi metoda sup()?",
+      "correct_answer": "Ustawia tekst jako indeks górny",
+      "accepted_answers": [
+        "Ustawia tekst jako indeks górny",
+        "indeks górny"
+      ],
+      "explanation": "Odpowiednik znacznika <sup>.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q101",
+      "type": "command_meaning",
+      "question": "Co robi metoda fontColor(kolor)?",
+      "correct_answer": "Ustawia kolor tekstu",
+      "accepted_answers": [
+        "Ustawia kolor tekstu",
+        "zmienia kolor tekstu"
+      ],
+      "explanation": "W przykładach notatek zapisano ją jako fontcolor().",
+      "case_sensitive": false
+    },
+    {
+      "id": "q102",
+      "type": "command_meaning",
+      "question": "Co robi metoda fontSize(rozmiar)?",
+      "correct_answer": "Ustawia wielkość tekstu",
+      "accepted_answers": [
+        "Ustawia wielkość tekstu",
+        "zmienia rozmiar tekstu"
+      ],
+      "explanation": "W przykładach notatek zapisano ją jako fontsize().",
+      "case_sensitive": false
+    },
+    {
+      "id": "q103",
+      "type": "command_meaning",
+      "question": "Co zwraca metoda charAt(indeks)?",
+      "correct_answer": "Znak z pozycji określonej przez indeks",
+      "accepted_answers": [
+        "Znak z pozycji określonej przez indeks",
+        "znak o podanym indeksie"
+      ],
+      "explanation": "Indeks jest liczony od zera.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q104",
+      "type": "code_output",
+      "question": "Od jakiej liczby liczony jest indeks w charAt()?",
+      "correct_answer": "0",
+      "accepted_answers": [
+        "0",
+        "zero",
+        "od zera",
+        "od 0"
+      ],
+      "explanation": "Pierwszy znak ma indeks 0.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q105",
+      "type": "code_output",
+      "question": "Jaki będzie wynik 'Ala ma kota'.charAt(0)?",
+      "correct_answer": "A",
+      "accepted_answers": [
+        "A"
+      ],
+      "explanation": "Pierwszy znak ma indeks 0.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q106",
+      "type": "command_meaning",
+      "question": "Co zwraca metoda indexOf('podłańcuch')?",
+      "correct_answer": "Indeks pierwszego znalezionego podłańcucha",
+      "accepted_answers": [
+        "Indeks pierwszego znalezionego podłańcucha",
+        "indeks pierwszego wystąpienia"
+      ],
+      "explanation": "indexOf() szuka od początku łańcucha.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q107",
+      "type": "command_meaning",
+      "question": "Co robi drugi parametr w indexOf('podł', index)?",
+      "correct_answer": "Określa indeks, od którego zaczyna się szukanie",
+      "accepted_answers": [
+        "Określa indeks, od którego zaczyna się szukanie",
+        "wskazuje początek szukania"
+      ],
+      "explanation": "Wyszukiwanie zaczyna się od podanego indeksu.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q108",
+      "type": "command_meaning",
+      "question": "Czym różni się lastIndexOf() od indexOf()?",
+      "correct_answer": "Szuka od końca ciągu znaków",
+      "accepted_answers": [
+        "Szuka od końca ciągu znaków",
+        "szuka od końca"
+      ],
+      "explanation": "lastIndexOf() przeszukuje łańcuch od końca.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q109",
+      "type": "command_meaning",
+      "question": "Co zwraca metoda substring(x,y)?",
+      "correct_answer": "Podłańcuch wycięty od pozycji x do pozycji y",
+      "accepted_answers": [
+        "Podłańcuch wycięty od pozycji x do pozycji y",
+        "fragment łańcucha od x do y"
+      ],
+      "explanation": "x i y liczone są od zera.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q110",
+      "type": "command_meaning",
+      "question": "Co robi metoda toLowerCase()?",
+      "correct_answer": "Konwertuje znaki w łańcuchu na małe litery",
+      "accepted_answers": [
+        "Konwertuje znaki w łańcuchu na małe litery",
+        "zamienia na małe litery"
+      ],
+      "explanation": "Zamienia litery na małe.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q111",
+      "type": "command_meaning",
+      "question": "Co robi metoda toUpperCase()?",
+      "correct_answer": "Konwertuje znaki w łańcuchu na wielkie litery",
+      "accepted_answers": [
+        "Konwertuje znaki w łańcuchu na wielkie litery",
+        "zamienia na wielkie litery"
+      ],
+      "explanation": "W notatkach błędnie zapisano toUppercase(); poprawna nazwa to toUpperCase().",
+      "case_sensitive": false
+    },
+    {
+      "id": "q112",
+      "type": "code_output",
+      "question": "Jaki będzie wynik 'Ala ma kota'.indexOf('a')?",
+      "correct_answer": "2",
+      "accepted_answers": [
+        "2"
+      ],
+      "explanation": "Pierwsze małe a jest na indeksie 2.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q113",
+      "type": "code_output",
+      "question": "Jaki będzie wynik 'Ala ma kota'.lastIndexOf('a')?",
+      "correct_answer": "10",
+      "accepted_answers": [
+        "10"
+      ],
+      "explanation": "Ostatnie a jest na indeksie 10.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q114",
+      "type": "code_output",
+      "question": "Jaki będzie wynik 'Ala ma kota'.toUpperCase()?",
+      "correct_answer": "ALA MA KOTA",
+      "accepted_answers": [
+        "ALA MA KOTA"
+      ],
+      "explanation": "Wszystkie litery stają się wielkie.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q115",
+      "type": "write_code",
+      "question": "Napisz kod wyświetlający liczbę znaków w tekście 'Ala ma kota'.",
+      "correct_answer": "document.write('Ala ma kota'.length);",
+      "accepted_answers": [
+        "document.write('Ala ma kota'.length);"
+      ],
+      "explanation": "length zwraca liczbę znaków.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q116",
+      "type": "write_code",
+      "question": "Napisz kod wyświetlający pogrubiony tekst 'Ala ma kota'.",
+      "correct_answer": "document.write('Ala ma kota'.bold());",
+      "accepted_answers": [
+        "document.write('Ala ma kota'.bold());"
+      ],
+      "explanation": "bold() pogrubia tekst.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q117",
+      "type": "write_code",
+      "question": "Napisz kod wyświetlający 'Ala ma' i dalej ' kota' w kolorze #ccc.",
+      "correct_answer": "document.write('Ala ma' + ' kota'.fontcolor('#ccc'));",
+      "accepted_answers": [
+        "document.write('Ala ma' + ' kota'.fontcolor('#ccc'));",
+        "document.write('Ala ma' + ' kota'.fontColor('#ccc'));"
+      ],
+      "explanation": "Operator + łączy teksty, a fontcolor() ustawia kolor.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q118",
+      "type": "write_code",
+      "question": "Napisz kod wyświetlający 'Ala ma' i dalej ' kota' o rozmiarze czcionki 10.",
+      "correct_answer": "document.write('Ala ma' + ' kota'.fontsize(10));",
+      "accepted_answers": [
+        "document.write('Ala ma' + ' kota'.fontsize(10));",
+        "document.write('Ala ma' + ' kota'.fontSize(10));"
+      ],
+      "explanation": "fontsize() ustawia wielkość tekstu.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q119",
+      "type": "write_code",
+      "question": "Napisz kod wyświetlający 'Ala ma kota' wielkimi literami.",
+      "correct_answer": "document.write('Ala ma kota'.toUpperCase());",
+      "accepted_answers": [
+        "document.write('Ala ma kota'.toUpperCase());"
+      ],
+      "explanation": "toUpperCase() zamienia litery na wielkie.",
+      "case_sensitive": true
+    },
+    {
+      "id": "q120",
+      "type": "write_code",
+      "question": "Napisz kod wyświetlający indeks pierwszego znaku a w tekście 'Ala ma kota'.",
+      "correct_answer": "document.write('Ala ma kota'.indexOf('a'));",
+      "accepted_answers": [
+        "document.write('Ala ma kota'.indexOf('a'));"
+      ],
+      "explanation": "indexOf() zwraca indeks pierwszego wystąpienia.",
+      "case_sensitive": true
+    }
+  ]
+}
