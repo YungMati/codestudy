@@ -1,0 +1,15 @@
+{
+  "subject": "SQL",
+  "section": "Podstawy SQL",
+  "topic": "SELECT",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "write_command",
+      "question": "Napisz zapytanie, które wybierze wszystkie kolumny z tabeli uczniowie.",
+      "correct_answer": "SELECT * FROM uczniowie;",
+      "accepted_answers": ["SELECT * FROM uczniowie;", "SELECT * FROM uczniowie"],
+      "explanation": "Gwiazdka (*) oznacza wszystkie kolumny, a FROM wskazuje tabelę."
+    }
+  ]
+}
