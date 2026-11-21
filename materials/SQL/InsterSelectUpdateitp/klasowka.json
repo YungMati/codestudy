@@ -1,0 +1,852 @@
+{
+  "subject": "SQL",
+  "section": "Podstawy SQL",
+  "topic": "Zakres pracy klasowej T-SQL",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "command_meaning",
+      "question": "Co robi zapytanie SELECT * FROM produkt?",
+      "correct_answer": "Wyświetla wszystkie kolumny i wszystkie rekordy z tabeli produkt",
+      "accepted_answers": [
+        "Wyświetla wszystkie kolumny i wszystkie rekordy z tabeli produkt",
+        "wyświetla wszystko z tabeli",
+        "zwraca wszystkie dane z tabeli"
+      ],
+      "explanation": "Gwiazdka (*) oznacza wszystkie kolumny, a FROM wskazuje tabelę.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q2",
+      "type": "write_command",
+      "question": "Jakie słowo kluczowe wskazuje tabelę, z której pobieramy dane?",
+      "correct_answer": "FROM",
+      "accepted_answers": [
+        "FROM"
+      ],
+      "explanation": "Po FROM podajemy nazwę tabeli.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q3",
+      "type": "command_meaning",
+      "question": "Do czego służy TOP n w T-SQL?",
+      "correct_answer": "Ogranicza liczbę zwracanych rekordów do n pierwszych",
+      "accepted_answers": [
+        "Ogranicza liczbę zwracanych rekordów do n pierwszych",
+        "ogranicza liczbę rekordów",
+        "zwraca n pierwszych rekordów"
+      ],
+      "explanation": "TOP stoi zaraz po SELECT. W innych bazach odpowiada mu LIMIT.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q4",
+      "type": "command_meaning",
+      "question": "Co robi słowo DISTINCT w zapytaniu SELECT?",
+      "correct_answer": "Usuwa powtarzające się wiersze z wyniku",
+      "accepted_answers": [
+        "Usuwa powtarzające się wiersze z wyniku",
+        "usuwa powtórzenia",
+        "wyświetla bez powtórzeń"
+      ],
+      "explanation": "DISTINCT zwraca tylko unikalne wartości.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q5",
+      "type": "command_meaning",
+      "question": "Do czego służy klauzula ORDER BY?",
+      "correct_answer": "Do sortowania wyników",
+      "accepted_answers": [
+        "Do sortowania wyników",
+        "sortuje wyniki",
+        "sortuje rekordy"
+      ],
+      "explanation": "ORDER BY sortuje wynik zapytania i stoi na jego końcu.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q6",
+      "type": "command_meaning",
+      "question": "Jakie jest domyślne sortowanie w ORDER BY?",
+      "correct_answer": "Rosnące (ASC)",
+      "accepted_answers": [
+        "Rosnące (ASC)",
+        "rosnące",
+        "asc"
+      ],
+      "explanation": "Bez wskazania kierunku sortowanie jest rosnące. DESC oznacza malejące.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q7",
+      "type": "command_meaning",
+      "question": "Do czego służy klauzula WHERE?",
+      "correct_answer": "Do filtrowania rekordów według warunku",
+      "accepted_answers": [
+        "Do filtrowania rekordów według warunku",
+        "filtruje rekordy",
+        "wybiera rekordy spełniające warunek"
+      ],
+      "explanation": "WHERE zostawia tylko rekordy spełniające warunek.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q8",
+      "type": "command_meaning",
+      "question": "Do czego służy operator LIKE?",
+      "correct_answer": "Do porównywania tekstu ze wzorcem",
+      "accepted_answers": [
+        "Do porównywania tekstu ze wzorcem",
+        "porównuje tekst ze wzorcem",
+        "wyszukuje tekst według wzorca"
+      ],
+      "explanation": "LIKE używa znaków specjalnych % oraz _.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q9",
+      "type": "command_meaning",
+      "question": "Co oznacza znak % we wzorcu LIKE?",
+      "correct_answer": "Dowolny ciąg znaków (także pusty)",
+      "accepted_answers": [
+        "Dowolny ciąg znaków (także pusty)",
+        "dowolny ciąg znaków",
+        "dowolna liczba znaków"
+      ],
+      "explanation": "Np. 'S%' to teksty zaczynające się od S.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q10",
+      "type": "command_meaning",
+      "question": "Co oznacza znak _ we wzorcu LIKE?",
+      "correct_answer": "Dokładnie jeden dowolny znak",
+      "accepted_answers": [
+        "Dokładnie jeden dowolny znak",
+        "jeden dowolny znak",
+        "jeden znak"
+      ],
+      "explanation": "Np. 'K_t' pasuje do Kot i Kit.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q11",
+      "type": "command_meaning",
+      "question": "Co oznacza wartość NULL w bazie danych?",
+      "correct_answer": "Brak wartości (puste pole)",
+      "accepted_answers": [
+        "Brak wartości (puste pole)",
+        "brak wartości",
+        "puste pole",
+        "wartość nieznana"
+      ],
+      "explanation": "NULL nie jest zerem ani pustym tekstem.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q12",
+      "type": "write_command",
+      "question": "Jakim operatorem sprawdzisz, czy kolumna ma wartość NULL?",
+      "correct_answer": "IS NULL",
+      "accepted_answers": [
+        "IS NULL",
+        "is null"
+      ],
+      "explanation": "Nie używamy = NULL, tylko IS NULL lub IS NOT NULL.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q13",
+      "type": "command_meaning",
+      "question": "Do czego służy słowo AS w SELECT?",
+      "correct_answer": "Do nadania aliasu kolumnie lub tabeli",
+      "accepted_answers": [
+        "Do nadania aliasu kolumnie lub tabeli",
+        "nadaje alias",
+        "tworzy alias"
+      ],
+      "explanation": "Alias zmienia nazwę kolumny tylko w wyniku zapytania.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q14",
+      "type": "command_meaning",
+      "question": "Co robi funkcja ISNULL(kolumna, wartość)?",
+      "correct_answer": "Zastępuje NULL podaną wartością",
+      "accepted_answers": [
+        "Zastępuje NULL podaną wartością",
+        "zamienia NULL na wartość",
+        "podstawia wartość za NULL"
+      ],
+      "explanation": "Jeśli kolumna ma wartość, funkcja zwraca tę wartość. Inną funkcją o tym działaniu jest COALESCE.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q15",
+      "type": "command_meaning",
+      "question": "Co zwraca funkcja DATEDIFF(day, data1, data2)?",
+      "correct_answer": "Liczbę dni między data1 a data2",
+      "accepted_answers": [
+        "Liczbę dni między data1 a data2",
+        "liczbę dni między datami",
+        "różnicę dat w dniach"
+      ],
+      "explanation": "Pierwszy argument to jednostka, np. day.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q16",
+      "type": "command_meaning",
+      "question": "Do czego służy wyrażenie CASE?",
+      "correct_answer": "Do warunkowego wybierania wartości (jak instrukcja if)",
+      "accepted_answers": [
+        "Do warunkowego wybierania wartości (jak instrukcja if)",
+        "do wyboru wartości według warunków",
+        "warunkowe wartości"
+      ],
+      "explanation": "CASE WHEN warunek THEN wartość ... ELSE wartość END.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q17",
+      "type": "command_meaning",
+      "question": "Co daje ORDER BY NEWID()?",
+      "correct_answer": "Losową kolejność rekordów",
+      "accepted_answers": [
+        "Losową kolejność rekordów",
+        "losowe sortowanie",
+        "losowa kolejność"
+      ],
+      "explanation": "NEWID() generuje losowy identyfikator, więc przy każdym uruchomieniu kolejność jest inna.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q18",
+      "type": "command_meaning",
+      "question": "Co robi polecenie INSERT INTO?",
+      "correct_answer": "Dodaje nowy rekord do tabeli",
+      "accepted_answers": [
+        "Dodaje nowy rekord do tabeli",
+        "dodaje rekord",
+        "wstawia rekord"
+      ],
+      "explanation": "Wartości podajemy po słowie VALUES.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q19",
+      "type": "command_meaning",
+      "question": "Co robi polecenie UPDATE?",
+      "correct_answer": "Zmienia wartości w istniejących rekordach",
+      "accepted_answers": [
+        "Zmienia wartości w istniejących rekordach",
+        "aktualizuje rekordy",
+        "modyfikuje rekordy"
+      ],
+      "explanation": "UPDATE tabela SET kolumna = wartość WHERE warunek.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q20",
+      "type": "command_meaning",
+      "question": "Co robi polecenie DELETE FROM?",
+      "correct_answer": "Usuwa rekordy z tabeli",
+      "accepted_answers": [
+        "Usuwa rekordy z tabeli",
+        "usuwa rekordy",
+        "kasuje rekordy"
+      ],
+      "explanation": "Usuwa wiersze, a nie samą tabelę.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q21",
+      "type": "command_meaning",
+      "question": "Co się stanie, jeśli w poleceniu UPDATE pominiesz WHERE?",
+      "correct_answer": "Zmienią się wszystkie rekordy w tabeli",
+      "accepted_answers": [
+        "Zmienią się wszystkie rekordy w tabeli",
+        "zaktualizuje wszystkie rekordy",
+        "wszystkie rekordy zostaną zmienione"
+      ],
+      "explanation": "Bez WHERE UPDATE obejmuje całą tabelę.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q22",
+      "type": "command_meaning",
+      "question": "Co się stanie, jeśli w poleceniu DELETE FROM pominiesz WHERE?",
+      "correct_answer": "Usuną się wszystkie rekordy z tabeli",
+      "accepted_answers": [
+        "Usuną się wszystkie rekordy z tabeli",
+        "usunie wszystkie rekordy",
+        "wszystkie rekordy zostaną usunięte"
+      ],
+      "explanation": "Bez WHERE DELETE kasuje wszystkie wiersze.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q23",
+      "type": "command_meaning",
+      "question": "Co zrobisz z kolumną IDENTITY w poleceniu INSERT?",
+      "correct_answer": "Pominiesz ją, bo wartość nadaje się automatycznie",
+      "accepted_answers": [
+        "Pominiesz ją, bo wartość nadaje się automatycznie",
+        "pominę ją",
+        "pomijam kolumnę",
+        "nie podaję jej"
+      ],
+      "explanation": "Klucz IDENTITY generuje serwer.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q24",
+      "type": "write_command",
+      "question": "Jakim znakiem zaczyna się komentarz jednoliniowy w T-SQL?",
+      "correct_answer": "--",
+      "accepted_answers": [
+        "--",
+        "dwa myślniki"
+      ],
+      "explanation": "Np. -- Zadanie 5.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q25",
+      "type": "write_command",
+      "question": "Jakiego operatora użyjesz do zapisu „różne od”?",
+      "correct_answer": "<>",
+      "accepted_answers": [
+        "<>",
+        "!="
+      ],
+      "explanation": "W T-SQL działają oba zapisy: <> oraz !=.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q26",
+      "type": "write_command",
+      "question": "Jaki operator sprawdza, czy wartość mieści się w zakresie (włącznie z końcami)?",
+      "correct_answer": "BETWEEN",
+      "accepted_answers": [
+        "BETWEEN"
+      ],
+      "explanation": "Np. cena BETWEEN 10 AND 20.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q27",
+      "type": "write_command",
+      "question": "Jaki operator sprawdza, czy wartość znajduje się na liście wartości?",
+      "correct_answer": "IN",
+      "accepted_answers": [
+        "IN"
+      ],
+      "explanation": "Np. kategoria IN ('A','B').",
+      "case_sensitive": false
+    },
+    {
+      "id": "q28",
+      "type": "command_meaning",
+      "question": "Dlaczego warunki z OR łączone z AND ujmujemy w nawiasy?",
+      "correct_answer": "AND ma wyższy priorytet niż OR",
+      "accepted_answers": [
+        "AND ma wyższy priorytet niż OR",
+        "and ma pierwszeństwo przed or",
+        "żeby wymusić kolejność"
+      ],
+      "explanation": "Nawiasy zmieniają kolejność oceny warunków.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q29",
+      "type": "write_command",
+      "question": "Wyświetl wszystko z tabeli produkt.",
+      "correct_answer": "SELECT * FROM produkt",
+      "accepted_answers": [
+        "SELECT * FROM produkt"
+      ],
+      "explanation": "Gwiazdka oznacza wszystkie kolumny.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q30",
+      "type": "write_command",
+      "question": "Wyświetl kolumny nazwa i cena z tabeli produkt.",
+      "correct_answer": "SELECT nazwa, cena FROM produkt",
+      "accepted_answers": [
+        "SELECT nazwa, cena FROM produkt"
+      ],
+      "explanation": "Kolumny wymieniamy po przecinku.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q31",
+      "type": "write_code",
+      "question": "Wyświetl wszystkie kolumny trzech najstarszych osób z tabeli uczen (kolumna data_ur).",
+      "correct_answer": "SELECT TOP 3 * FROM uczen ORDER BY data_ur ASC",
+      "accepted_answers": [
+        "SELECT TOP 3 * FROM uczen ORDER BY data_ur ASC",
+        "SELECT TOP 3 * FROM uczen ORDER BY data_ur"
+      ],
+      "explanation": "Najstarsza osoba ma najwcześniejszą datę urodzenia, więc sortujemy rosnąco.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q32",
+      "type": "write_code",
+      "question": "Wyświetl wszystkie kolumny dwóch najmłodszych osób z tabeli uczen (kolumna data_ur).",
+      "correct_answer": "SELECT TOP 2 * FROM uczen ORDER BY data_ur DESC",
+      "accepted_answers": [
+        "SELECT TOP 2 * FROM uczen ORDER BY data_ur DESC"
+      ],
+      "explanation": "Najmłodsza osoba ma najpóźniejszą datę urodzenia, więc sortujemy malejąco.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q33",
+      "type": "write_code",
+      "question": "Wyświetl losowo 2 rekordy z tabeli produkt.",
+      "correct_answer": "SELECT TOP 2 * FROM produkt ORDER BY NEWID()",
+      "accepted_answers": [
+        "SELECT TOP 2 * FROM produkt ORDER BY NEWID()"
+      ],
+      "explanation": "NEWID() daje losową kolejność.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q34",
+      "type": "write_code",
+      "question": "Wyświetl bez powtórzeń kolumnę kategoria z tabeli produkt, pomijając NULL, posortowaną alfabetycznie.",
+      "correct_answer": "SELECT DISTINCT kategoria FROM produkt WHERE kategoria IS NOT NULL ORDER BY kategoria",
+      "accepted_answers": [
+        "SELECT DISTINCT kategoria FROM produkt WHERE kategoria IS NOT NULL ORDER BY kategoria",
+        "SELECT DISTINCT kategoria FROM produkt WHERE kategoria IS NOT NULL ORDER BY kategoria ASC"
+      ],
+      "explanation": "Kolejność klauzul: SELECT, FROM, WHERE, ORDER BY.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q35",
+      "type": "write_code",
+      "question": "Wyświetl bez powtórzeń kolumnę kategoria z tabeli produkt, pomijając puste wartości i NULL.",
+      "correct_answer": "SELECT DISTINCT kategoria FROM produkt WHERE kategoria IS NOT NULL AND kategoria <> ''",
+      "accepted_answers": [
+        "SELECT DISTINCT kategoria FROM produkt WHERE kategoria IS NOT NULL AND kategoria <> ''",
+        "SELECT DISTINCT kategoria FROM produkt WHERE kategoria IS NOT NULL AND kategoria != ''",
+        "SELECT DISTINCT kategoria FROM produkt WHERE kategoria <> '' AND kategoria IS NOT NULL"
+      ],
+      "explanation": "Puste pole może być NULL albo pustym tekstem, więc sprawdzamy oba przypadki.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q36",
+      "type": "write_code",
+      "question": "Z tabeli uczen wybierz imie i nazwisko osób, których nazwisko zaczyna się na K i kończy na a.",
+      "correct_answer": "SELECT imie, nazwisko FROM uczen WHERE nazwisko LIKE 'K%a'",
+      "accepted_answers": [
+        "SELECT imie, nazwisko FROM uczen WHERE nazwisko LIKE 'K%a'"
+      ],
+      "explanation": "Znak % zastępuje dowolny ciąg znaków.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q37",
+      "type": "write_code",
+      "question": "Z tabeli uczen wybierz nazwiska kończące się na ski.",
+      "correct_answer": "SELECT nazwisko FROM uczen WHERE nazwisko LIKE '%ski'",
+      "accepted_answers": [
+        "SELECT nazwisko FROM uczen WHERE nazwisko LIKE '%ski'"
+      ],
+      "explanation": "Wzorzec '%ski' dopasowuje końcówkę.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q38",
+      "type": "write_code",
+      "question": "Z tabeli uczen wybierz osoby, których imię zawiera literę z.",
+      "correct_answer": "SELECT * FROM uczen WHERE imie LIKE '%z%'",
+      "accepted_answers": [
+        "SELECT * FROM uczen WHERE imie LIKE '%z%'"
+      ],
+      "explanation": "Znak % z obu stron szuka fragmentu w dowolnym miejscu.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q39",
+      "type": "write_code",
+      "question": "Z tabeli produkt wybierz nazwa, kategoria, cena dla produktów z kategorii Laptop lub Tablet, których cena jest większa niż 2000.",
+      "correct_answer": "SELECT nazwa, kategoria, cena FROM produkt WHERE (kategoria = 'Laptop' OR kategoria = 'Tablet') AND cena > 2000",
+      "accepted_answers": [
+        "SELECT nazwa, kategoria, cena FROM produkt WHERE (kategoria = 'Laptop' OR kategoria = 'Tablet') AND cena > 2000",
+        "SELECT nazwa, kategoria, cena FROM produkt WHERE kategoria IN ('Laptop', 'Tablet') AND cena > 2000"
+      ],
+      "explanation": "Warunek z OR ujmujemy w nawiasy.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q40",
+      "type": "write_code",
+      "question": "Z tabeli produkt wybierz wszystkie kolumny dla produktów z kategorii Laptop, Tablet lub Telefon, używając IN.",
+      "correct_answer": "SELECT * FROM produkt WHERE kategoria IN ('Laptop', 'Tablet', 'Telefon')",
+      "accepted_answers": [
+        "SELECT * FROM produkt WHERE kategoria IN ('Laptop', 'Tablet', 'Telefon')"
+      ],
+      "explanation": "IN zastępuje kilka warunków połączonych OR.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q41",
+      "type": "write_code",
+      "question": "Z tabeli produkt wybierz produkty, których cena jest w przedziale od 100 do 500 włącznie.",
+      "correct_answer": "SELECT * FROM produkt WHERE cena BETWEEN 100 AND 500",
+      "accepted_answers": [
+        "SELECT * FROM produkt WHERE cena BETWEEN 100 AND 500",
+        "SELECT * FROM produkt WHERE cena >= 100 AND cena <= 500"
+      ],
+      "explanation": "BETWEEN obejmuje oba końce przedziału.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q42",
+      "type": "write_code",
+      "question": "Wyświetl 5 pierwszych rekordów z kolumnami imie, nazwisko, ocena z tabeli uczen, posortowanych malejąco według ocena, a przy takiej samej ocenie alfabetycznie według nazwisko.",
+      "correct_answer": "SELECT TOP 5 imie, nazwisko, ocena FROM uczen ORDER BY ocena DESC, nazwisko",
+      "accepted_answers": [
+        "SELECT TOP 5 imie, nazwisko, ocena FROM uczen ORDER BY ocena DESC, nazwisko",
+        "SELECT TOP 5 imie, nazwisko, ocena FROM uczen ORDER BY ocena DESC, nazwisko ASC"
+      ],
+      "explanation": "Kolejne kryteria sortowania oddzielamy przecinkiem.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q43",
+      "type": "write_code",
+      "question": "Z tabeli uczen wybierz imie oraz email. Jeśli email jest NULL, wyświetl tekst brak adresu. Nazwij kolumnę adres (użyj ISNULL).",
+      "correct_answer": "SELECT imie, ISNULL(email, 'brak adresu') AS adres FROM uczen",
+      "accepted_answers": [
+        "SELECT imie, ISNULL(email, 'brak adresu') AS adres FROM uczen",
+        "SELECT imie, ISNULL(email, 'brak adresu') adres FROM uczen",
+        "SELECT imie, COALESCE(email, 'brak adresu') AS adres FROM uczen"
+      ],
+      "explanation": "ISNULL podstawia wartość za NULL, a AS nadaje alias.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q44",
+      "type": "write_code",
+      "question": "Z tabeli produkt wybierz nazwa, cena, rabat oraz kolumnę do_zaplaty będącą różnicą cena i rabat, dla produktów, które mają rabat (nie jest NULL).",
+      "correct_answer": "SELECT nazwa, cena, rabat, cena - rabat AS do_zaplaty FROM produkt WHERE rabat IS NOT NULL",
+      "accepted_answers": [
+        "SELECT nazwa, cena, rabat, cena - rabat AS do_zaplaty FROM produkt WHERE rabat IS NOT NULL",
+        "SELECT nazwa, cena, rabat, cena - rabat do_zaplaty FROM produkt WHERE rabat IS NOT NULL"
+      ],
+      "explanation": "Kolumnę wyliczeniową tworzymy w SELECT, a alias nadajemy przez AS.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q45",
+      "type": "write_code",
+      "question": "Z tabeli zamowienie wybierz id_zamowienie, data_zam, data_wys oraz kolumnę dni z liczbą dni między data_zam a data_wys. Posortuj malejąco według dni, a potem rosnąco według id_zamowienie.",
+      "correct_answer": "SELECT id_zamowienie, data_zam, data_wys, DATEDIFF(day, data_zam, data_wys) AS dni FROM zamowienie ORDER BY dni DESC, id_zamowienie",
+      "accepted_answers": [
+        "SELECT id_zamowienie, data_zam, data_wys, DATEDIFF(day, data_zam, data_wys) AS dni FROM zamowienie ORDER BY dni DESC, id_zamowienie",
+        "SELECT id_zamowienie, data_zam, data_wys, DATEDIFF(day, data_zam, data_wys) AS dni FROM zamowienie ORDER BY dni DESC, id_zamowienie ASC",
+        "SELECT id_zamowienie, data_zam, data_wys, DATEDIFF(d, data_zam, data_wys) AS dni FROM zamowienie ORDER BY dni DESC, id_zamowienie"
+      ],
+      "explanation": "DATEDIFF(jednostka, od, do). W T-SQL w ORDER BY można użyć aliasu.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q46",
+      "type": "write_code",
+      "question": "Z tabeli produkt wybierz nazwa, cena oraz kolumnę typ: dla cena mniejszej niż 50 wpisz tania, dla cena od 50 do 200 wpisz srednia, dla pozostałych wpisz droga.",
+      "correct_answer": "SELECT nazwa, cena, CASE WHEN cena < 50 THEN 'tania' WHEN cena <= 200 THEN 'srednia' ELSE 'droga' END AS typ FROM produkt",
+      "accepted_answers": [
+        "SELECT nazwa, cena, CASE WHEN cena < 50 THEN 'tania' WHEN cena <= 200 THEN 'srednia' ELSE 'droga' END AS typ FROM produkt",
+        "SELECT nazwa, cena, CASE WHEN cena < 50 THEN 'tania' WHEN cena <= 200 THEN 'srednia' ELSE 'droga' END typ FROM produkt",
+        "SELECT nazwa, cena, CASE WHEN cena < 50 THEN 'tania' WHEN cena BETWEEN 50 AND 200 THEN 'srednia' ELSE 'droga' END AS typ FROM produkt"
+      ],
+      "explanation": "CASE sprawdza warunki po kolei i zwraca wartość pierwszego spełnionego.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q47",
+      "type": "write_code",
+      "question": "Dodaj do tabeli produkt rekord: nazwa Mysz, kategoria Akcesoria, cena 49.99, ilosc 100. Kolumna id_produkt jest IDENTITY.",
+      "correct_answer": "INSERT INTO produkt (nazwa, kategoria, cena, ilosc) VALUES ('Mysz', 'Akcesoria', 49.99, 100)",
+      "accepted_answers": [
+        "INSERT INTO produkt (nazwa, kategoria, cena, ilosc) VALUES ('Mysz', 'Akcesoria', 49.99, 100)"
+      ],
+      "explanation": "Kolumnę IDENTITY pomijamy. Tekst ujmujemy w apostrofy, liczby bez.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q48",
+      "type": "write_code",
+      "question": "Zmień w tabeli uczen klasę na 3A dla osoby o id_uczen równym 5.",
+      "correct_answer": "UPDATE uczen SET klasa = '3A' WHERE id_uczen = 5",
+      "accepted_answers": [
+        "UPDATE uczen SET klasa = '3A' WHERE id_uczen = 5"
+      ],
+      "explanation": "UPDATE tabela SET kolumna = wartość WHERE warunek.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q49",
+      "type": "write_code",
+      "question": "Zmień w tabeli produkt cenę na 79.99 i ilość na 20 dla produktu o id_produkt równym 7.",
+      "correct_answer": "UPDATE produkt SET cena = 79.99, ilosc = 20 WHERE id_produkt = 7",
+      "accepted_answers": [
+        "UPDATE produkt SET cena = 79.99, ilosc = 20 WHERE id_produkt = 7"
+      ],
+      "explanation": "Kilka kolumn w SET oddzielamy przecinkami.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q50",
+      "type": "write_code",
+      "question": "Zwiększ o 10 zł cenę wszystkich produktów z kategorii Laptop.",
+      "correct_answer": "UPDATE produkt SET cena = cena + 10 WHERE kategoria = 'Laptop'",
+      "accepted_answers": [
+        "UPDATE produkt SET cena = cena + 10 WHERE kategoria = 'Laptop'"
+      ],
+      "explanation": "Nową wartość można wyliczyć z bieżącej: cena = cena + 10.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q51",
+      "type": "write_code",
+      "question": "Zwiększ o 100 wartość kolumny dodatek w tabeli pracownik dla działu Sprzedaz, tak aby NULL był traktowany jak 0.",
+      "correct_answer": "UPDATE pracownik SET dodatek = ISNULL(dodatek, 0) + 100 WHERE dzial = 'Sprzedaz'",
+      "accepted_answers": [
+        "UPDATE pracownik SET dodatek = ISNULL(dodatek, 0) + 100 WHERE dzial = 'Sprzedaz'",
+        "UPDATE pracownik SET dodatek = COALESCE(dodatek, 0) + 100 WHERE dzial = 'Sprzedaz'"
+      ],
+      "explanation": "NULL + 100 daje NULL, więc najpierw zamieniamy NULL na 0.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q52",
+      "type": "write_code",
+      "question": "Usuń z tabeli produkt wszystkie rekordy, w których ilosc wynosi 0.",
+      "correct_answer": "DELETE FROM produkt WHERE ilosc = 0",
+      "accepted_answers": [
+        "DELETE FROM produkt WHERE ilosc = 0"
+      ],
+      "explanation": "DELETE FROM tabela WHERE warunek.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q53",
+      "type": "write_code",
+      "question": "Usuń z tabeli uczen wszystkie rekordy, w których email jest NULL.",
+      "correct_answer": "DELETE FROM uczen WHERE email IS NULL",
+      "accepted_answers": [
+        "DELETE FROM uczen WHERE email IS NULL"
+      ],
+      "explanation": "Do NULL używamy IS NULL, a nie = NULL.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q54",
+      "type": "fill_code",
+      "question": "Uzupełnij: SELECT ____ kategoria FROM produkt; (wynik bez powtórzeń)",
+      "correct_answer": "DISTINCT",
+      "accepted_answers": [
+        "DISTINCT"
+      ],
+      "explanation": "DISTINCT usuwa powtórzenia.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q55",
+      "type": "fill_code",
+      "question": "Uzupełnij: SELECT ____ 3 * FROM produkt; (pierwsze 3 rekordy)",
+      "correct_answer": "TOP",
+      "accepted_answers": [
+        "TOP"
+      ],
+      "explanation": "TOP n ogranicza liczbę rekordów.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q56",
+      "type": "fill_code",
+      "question": "Uzupełnij: SELECT * FROM produkt ____ BY cena DESC;",
+      "correct_answer": "ORDER",
+      "accepted_answers": [
+        "ORDER"
+      ],
+      "explanation": "ORDER BY sortuje wynik.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q57",
+      "type": "fill_code",
+      "question": "Uzupełnij: SELECT * FROM uczen WHERE email ____ NULL; (tylko osoby z emailem)",
+      "correct_answer": "IS NOT",
+      "accepted_answers": [
+        "IS NOT"
+      ],
+      "explanation": "Do NULL używamy IS NULL lub IS NOT NULL.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q58",
+      "type": "fill_code",
+      "question": "Uzupełnij: SELECT nazwa ____ produkt_nazwa FROM produkt; (alias)",
+      "correct_answer": "AS",
+      "accepted_answers": [
+        "AS"
+      ],
+      "explanation": "AS nadaje alias.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q59",
+      "type": "fill_code",
+      "question": "Uzupełnij: UPDATE produkt ____ cena = 10 WHERE id_produkt = 1;",
+      "correct_answer": "SET",
+      "accepted_answers": [
+        "SET"
+      ],
+      "explanation": "SET wskazuje nowe wartości kolumn.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q60",
+      "type": "fill_code",
+      "question": "Uzupełnij: DELETE ____ produkt WHERE id_produkt = 1;",
+      "correct_answer": "FROM",
+      "accepted_answers": [
+        "FROM"
+      ],
+      "explanation": "DELETE FROM tabela WHERE warunek.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q61",
+      "type": "fill_code",
+      "question": "Uzupełnij: SELECT * FROM uczen WHERE nazwisko ____ 'S%';",
+      "correct_answer": "LIKE",
+      "accepted_answers": [
+        "LIKE"
+      ],
+      "explanation": "LIKE porównuje tekst ze wzorcem.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q62",
+      "type": "fill_code",
+      "question": "Uzupełnij: SELECT CASE ____ cena < 10 THEN 'tania' ELSE 'droga' END FROM produkt;",
+      "correct_answer": "WHEN",
+      "accepted_answers": [
+        "WHEN"
+      ],
+      "explanation": "CASE WHEN warunek THEN wartość.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q63",
+      "type": "fill_code",
+      "question": "Uzupełnij: INSERT INTO uczen (imie, nazwisko) ____ ('Ola', 'Nowak');",
+      "correct_answer": "VALUES",
+      "accepted_answers": [
+        "VALUES"
+      ],
+      "explanation": "VALUES wprowadza wartości nowego rekordu.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q64",
+      "type": "fill_code",
+      "question": "Uzupełnij: SELECT * FROM produkt WHERE cena ____ 100 AND 200;",
+      "correct_answer": "BETWEEN",
+      "accepted_answers": [
+        "BETWEEN"
+      ],
+      "explanation": "BETWEEN obejmuje oba końce przedziału.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q65",
+      "type": "code_output",
+      "question": "Jaki wynik zwróci SELECT 5 + 3?",
+      "correct_answer": "8",
+      "accepted_answers": [
+        "8"
+      ],
+      "explanation": "To zwykłe dodawanie.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q66",
+      "type": "code_output",
+      "question": "Jaki wynik zwróci SELECT DATEDIFF(day, '2024-01-01', '2024-01-11')?",
+      "correct_answer": "10",
+      "accepted_answers": [
+        "10"
+      ],
+      "explanation": "Między tymi datami jest 10 dni.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q67",
+      "type": "code_output",
+      "question": "Jaki wynik zwróci SELECT ISNULL(NULL, 'brak')?",
+      "correct_answer": "brak",
+      "accepted_answers": [
+        "brak"
+      ],
+      "explanation": "Pierwszy argument to NULL, więc zwracana jest wartość zastępcza.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q68",
+      "type": "code_output",
+      "question": "Jaki wynik zwróci SELECT CASE WHEN 5 > 3 THEN 'tak' ELSE 'nie' END?",
+      "correct_answer": "tak",
+      "accepted_answers": [
+        "tak"
+      ],
+      "explanation": "Warunek 5 > 3 jest prawdziwy.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q69",
+      "type": "code_output",
+      "question": "Jaki wynik zwróci wyrażenie NULL + 100?",
+      "correct_answer": "NULL",
+      "accepted_answers": [
+        "NULL"
+      ],
+      "explanation": "Każde działanie z NULL daje NULL.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q70",
+      "type": "code_output",
+      "question": "Które nazwisko pasuje do wzorca LIKE 'S%k': Sobczak, Nowak czy Kowalski?",
+      "correct_answer": "Sobczak",
+      "accepted_answers": [
+        "Sobczak"
+      ],
+      "explanation": "Pasuje tekst zaczynający się na S i kończący na k.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q71",
+      "type": "code_output",
+      "question": "Ile rekordów zwróci SELECT TOP 3 * z tabeli, która ma 2 rekordy?",
+      "correct_answer": "2",
+      "accepted_answers": [
+        "2"
+      ],
+      "explanation": "TOP 3 oznacza najwyżej 3 rekordy.",
+      "case_sensitive": false
+    }
+  ]
+}
