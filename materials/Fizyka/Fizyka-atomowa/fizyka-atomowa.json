@@ -1,0 +1,1136 @@
+{
+  "subject": "Fizyka",
+  "section": "Fizyka atomowa",
+  "topic": "Fizyka atomowa – cały materiał",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "short_answer",
+      "question": "Jak nazywa się zjawisko wybijania elektronów z powierzchni metalu przez światło?",
+      "correct_answer": "efekt fotoelektryczny",
+      "accepted_answers": [
+        "efekt fotoelektryczny",
+        "zjawisko fotoelektryczne",
+        "fotoelektryczny"
+      ],
+      "explanation": "Światło (fotony) wybija elektrony z metalu.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q2",
+      "type": "short_answer",
+      "question": "Jak musi się mieć częstotliwość światła do częstotliwości granicznej, aby zaszedł efekt fotoelektryczny?",
+      "correct_answer": "równa lub większa",
+      "accepted_answers": [
+        "równa lub większa",
+        "większa lub równa",
+        "większa",
+        "nie mniejsza"
+      ],
+      "explanation": "Dla częstotliwości poniżej granicznej efekt nie zachodzi.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q3",
+      "type": "short_answer",
+      "question": "Jaką energię (w odniesieniu do metalu) musi mieć foton, aby wybić elektron?",
+      "correct_answer": "co najmniej równą pracy wyjścia",
+      "accepted_answers": [
+        "co najmniej równą pracy wyjścia",
+        "praca wyjścia",
+        "pracy wyjścia",
+        "równą pracy wyjścia",
+        "nie mniejszą niż praca wyjścia"
+      ],
+      "explanation": "Praca wyjścia W to minimalna energia potrzebna do wyrwania elektronu z metalu.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q4",
+      "type": "short_answer",
+      "question": "Napisz wzór na maksymalną energię kinetyczną fotoelektronu (równanie Einsteina–Millikana).",
+      "correct_answer": "Ek = hf - W",
+      "accepted_answers": [
+        "Ek = hf - W",
+        "Ek=hf-W",
+        "Ekmax=hf-W",
+        "Ek max=hf-W",
+        "Ek=E-W",
+        "Ek=h*f-W"
+      ],
+      "explanation": "Energia fotonu hf zamienia się na pracę wyjścia W i energię kinetyczną.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q5",
+      "type": "calculation",
+      "question": "Na sód (praca wyjścia 2,75 eV) pada foton o energii 5,5 eV. Jaka jest maksymalna energia kinetyczna wybitego elektronu?",
+      "correct_answer": "2,75 eV",
+      "accepted_answers": [
+        "2,75 eV",
+        "2,75",
+        "2,75eV",
+        "2.75",
+        "2.75 eV",
+        "2.75eV"
+      ],
+      "explanation": "Ek = 5,5 eV − 2,75 eV = 2,75 eV.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q6",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Elektron wybity z metalu może opuścić go z energią kinetyczną mniejszą od maksymalnej (np. 1,25 eV).",
+      "correct_answer": "P",
+      "accepted_answers": [
+        "P",
+        "prawda",
+        "prawdziwe"
+      ],
+      "explanation": "Energia maksymalna dotyczy elektronów z powierzchni. Z głębszych warstw wylatują wolniejsze.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q7",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Jeden foton o energii dwukrotnie większej od pracy wyjścia wybije dwa elektrony.",
+      "correct_answer": "F",
+      "accepted_answers": [
+        "F",
+        "fałsz",
+        "fałszywe"
+      ],
+      "explanation": "Jeden foton oddaje energię jednemu elektronowi.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q8",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Światło można opisać wyłącznie jako falę.",
+      "correct_answer": "F",
+      "accepted_answers": [
+        "F",
+        "fałsz",
+        "fałszywe"
+      ],
+      "explanation": "Światło ma naturę falową i korpuskularną (dualizm).",
+      "case_sensitive": false
+    },
+    {
+      "id": "q9",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Dyfrakcja i interferencja są zjawiskami falowymi.",
+      "correct_answer": "P",
+      "accepted_answers": [
+        "P",
+        "prawda",
+        "prawdziwe"
+      ],
+      "explanation": "Zachodzą dla fal, a wyniki doświadczeń potwierdzają falową naturę światła.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q10",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Efekt fotoelektryczny i zjawisko fotochemiczne potwierdzają falową naturę światła.",
+      "correct_answer": "F",
+      "accepted_answers": [
+        "F",
+        "fałsz",
+        "fałszywe"
+      ],
+      "explanation": "Potwierdzają naturę korpuskularną, czyli istnienie fotonów.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q11",
+      "type": "short_answer",
+      "question": "Jak nazywa się to, że światło i cząstki wykazują jednocześnie cechy fal i cząstek?",
+      "correct_answer": "dualizm korpuskularno-falowy",
+      "accepted_answers": [
+        "dualizm korpuskularno-falowy",
+        "dualizm falowo-korpuskularny",
+        "dualizm"
+      ],
+      "explanation": "Każdy obiekt mikroświata ma dwoistą naturę.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q12",
+      "type": "short_answer",
+      "question": "Napisz wzór na energię fotonu przez długość fali λ.",
+      "correct_answer": "E = hc/λ",
+      "accepted_answers": [
+        "E = hc/λ",
+        "E=hc/λ",
+        "E=h*c/λ",
+        "E=hc/lambda",
+        "E=h·c/λ"
+      ],
+      "explanation": "E = hf, a f = c/λ.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q13",
+      "type": "calculation",
+      "question": "Oblicz energię fotonu światła żółtego o długości fali 570 nm (h = 4,14·10^-15 eV·s, c = 3·10^8 m/s). Wynik w eV.",
+      "correct_answer": "2,18 eV",
+      "accepted_answers": [
+        "2,18 eV",
+        "2,18",
+        "2,18eV",
+        "2.18",
+        "2.18 eV",
+        "2.18eV",
+        "2,179",
+        "2,179 eV",
+        "2,179eV",
+        "2.179",
+        "2.179 eV",
+        "2.179eV",
+        "2,2",
+        "2,2 eV",
+        "2,2eV"
+      ],
+      "explanation": "E = hc/λ = 4,14·10^-15 · 3·10^8 / 5,7·10^-7 ≈ 2,18 eV.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q14",
+      "type": "short_answer",
+      "question": "Czy światło żółte 570 nm wywoła efekt fotoelektryczny w ołowiu (praca wyjścia 4,25 eV)?",
+      "correct_answer": "nie",
+      "accepted_answers": [
+        "nie",
+        "nie zajdzie",
+        "nie wywoła",
+        "brak efektu"
+      ],
+      "explanation": "Energia fotonu 2,18 eV jest mniejsza od pracy wyjścia 4,25 eV.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q15",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Teoretycznie wszystkie cząstki materii mogą ulegać dyfrakcji i interferencji.",
+      "correct_answer": "P",
+      "accepted_answers": [
+        "P",
+        "prawda",
+        "prawdziwe"
+      ],
+      "explanation": "Każda cząstka ma związaną z nią falę materii.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q16",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Zjawiska falowe cząstek zachodzą wyłącznie dla strumieni wielu cząstek.",
+      "correct_answer": "F",
+      "accepted_answers": [
+        "F",
+        "fałsz",
+        "fałszywe"
+      ],
+      "explanation": "Interferencję obserwuje się też dla pojedynczych cząstek wysyłanych po kolei.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q17",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Niektóre obiekty mikroświata mają wyłącznie cechy cząstek, a inne wyłącznie cechy fal.",
+      "correct_answer": "F",
+      "accepted_answers": [
+        "F",
+        "fałsz",
+        "fałszywe"
+      ],
+      "explanation": "Wszystkie obiekty mikroświata mają obie cechy.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q18",
+      "type": "short_answer",
+      "question": "Napisz wzór de Broglie'a na długość fali materii.",
+      "correct_answer": "λ = h/(mv)",
+      "accepted_answers": [
+        "λ = h/(mv)",
+        "λ=h/(mv)",
+        "λ=h/mv",
+        "λ=h/p",
+        "λ=h/(m*v)",
+        "λ=h/(m·v)"
+      ],
+      "explanation": "Długość fali materii to stała Plancka podzielona przez pęd.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q19",
+      "type": "short_answer",
+      "question": "Jak zmieni się długość fali materii cząstki, gdy jej prędkość wzrośnie (masa stała)?",
+      "correct_answer": "zmaleje",
+      "accepted_answers": [
+        "zmaleje",
+        "maleje",
+        "będzie mniejsza",
+        "skróci się"
+      ],
+      "explanation": "λ = h/(mv), więc większe v daje mniejsze λ.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q20",
+      "type": "short_answer",
+      "question": "Jak zmieni się długość fali materii, gdy masa cząstki zmaleje (prędkość stała)?",
+      "correct_answer": "wzrośnie",
+      "accepted_answers": [
+        "wzrośnie",
+        "rośnie",
+        "zwiększy się",
+        "będzie większa"
+      ],
+      "explanation": "λ = h/(mv), więc mniejsze m daje większe λ.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q21",
+      "type": "calculation",
+      "question": "Ile razy fala materii elektronu jest dłuższa od fali protonu o takiej samej energii kinetycznej? (podaj liczbę)",
+      "correct_answer": "43",
+      "accepted_answers": [
+        "43",
+        "ok. 43",
+        "43 razy",
+        "ok. 43 razy",
+        "43x"
+      ],
+      "explanation": "λ = h/√(2mEk), więc λe/λp = √(mp/me) = √1836 ≈ 43.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q22",
+      "type": "calculation",
+      "question": "Cząstka alfa (m = 6,64·10^-27 kg) porusza się z prędkością 4% prędkości światła (c = 3·10^8 m/s, h = 6,63·10^-34 J·s). Oblicz długość fali materii.",
+      "correct_answer": "8,3·10^-15 m",
+      "accepted_answers": [
+        "8,3·10^-15 m",
+        "8,3·10^-15",
+        "8,3 · 10^-15",
+        "8,3 · 10^-15 m",
+        "8,3*10^-15",
+        "8,3*10^-15 m",
+        "8,3 * 10^-15",
+        "8,3 * 10^-15 m",
+        "8,3x10^-15",
+        "8,3x10^-15 m",
+        "8,3 x 10^-15",
+        "8,3 x 10^-15 m",
+        "8,3e-15",
+        "8,3e-15 m",
+        "8,3·10^(-15)",
+        "8,3·10^(-15) m",
+        "8,3*10^(-15)",
+        "8,3*10^(-15) m",
+        "8.3·10^-15",
+        "8.3·10^-15 m",
+        "8.3 · 10^-15",
+        "8.3 · 10^-15 m",
+        "8.3*10^-15",
+        "8.3*10^-15 m",
+        "8.3 * 10^-15",
+        "8.3 * 10^-15 m",
+        "8.3x10^-15",
+        "8.3x10^-15 m",
+        "8.3 x 10^-15",
+        "8.3 x 10^-15 m",
+        "8.3e-15",
+        "8.3e-15 m",
+        "8.3·10^(-15)",
+        "8.3·10^(-15) m",
+        "8.3*10^(-15)",
+        "8.3*10^(-15) m"
+      ],
+      "explanation": "v = 1,2·10^7 m/s, λ = h/(mv) = 6,63·10^-34 / (6,64·10^-27 · 1,2·10^7) ≈ 8,3·10^-15 m.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q23",
+      "type": "short_answer",
+      "question": "Jakiego rodzaju promieniowanie wysyłają ogrzane ciała jako promieniowanie cieplne?",
+      "correct_answer": "elektromagnetyczne",
+      "accepted_answers": [
+        "elektromagnetyczne",
+        "promieniowanie elektromagnetyczne",
+        "fale elektromagnetyczne"
+      ],
+      "explanation": "Promieniowanie cieplne to fale elektromagnetyczne.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q24",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Najpopularniejszym rodzajem promieniowania cieplnego są fale dźwiękowe.",
+      "correct_answer": "F",
+      "accepted_answers": [
+        "F",
+        "fałsz",
+        "fałszywe"
+      ],
+      "explanation": "Promieniowanie cieplne to fale elektromagnetyczne, a nie dźwiękowe.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q25",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Po kolorze i jasności światła rozgrzanego ciała można ocenić jego temperaturę.",
+      "correct_answer": "P",
+      "accepted_answers": [
+        "P",
+        "prawda",
+        "prawdziwe"
+      ],
+      "explanation": "Im wyższa temperatura, tym barwa jest bardziej przesunięta ku krótszym falom.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q26",
+      "type": "short_answer",
+      "question": "Jak nazywa się prawo wiążące długość fali maksymalnej mocy promieniowania z temperaturą ciała?",
+      "correct_answer": "prawo Wiena",
+      "accepted_answers": [
+        "prawo Wiena",
+        "Wiena",
+        "prawo przesunięć Wiena",
+        "prawo przesunięć"
+      ],
+      "explanation": "Długość fali, dla której moc jest największa, jest odwrotnie proporcjonalna do temperatury.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q27",
+      "type": "short_answer",
+      "question": "Napisz zależność długości fali maksymalnej λmax od temperatury bezwzględnej T (prawo Wiena).",
+      "correct_answer": "λmax = b/T",
+      "accepted_answers": [
+        "λmax = b/T",
+        "λmax=b/T",
+        "λmax*T=const",
+        "λmax·T=const",
+        "λmax·T=b",
+        "λmax*T=b",
+        "λ·T=const"
+      ],
+      "explanation": "Iloczyn λmax i T jest stały, więc po podniesieniu temperatury λmax maleje.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q28",
+      "type": "short_answer",
+      "question": "W jakich jednostkach podstawia się temperaturę do prawa Wiena?",
+      "correct_answer": "w kelwinach",
+      "accepted_answers": [
+        "w kelwinach",
+        "kelwinach",
+        "kelwiny",
+        "K",
+        "kelwin"
+      ],
+      "explanation": "Temperatura musi być bezwzględna.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q29",
+      "type": "calculation",
+      "question": "Ile kelwinów to 100°C?",
+      "correct_answer": "373 K",
+      "accepted_answers": [
+        "373 K",
+        "373",
+        "373K",
+        "373,15",
+        "373,15 K",
+        "373,15K",
+        "373.15",
+        "373.15 K",
+        "373.15K"
+      ],
+      "explanation": "T[K] = t[°C] + 273 (lub 273,15).",
+      "case_sensitive": false
+    },
+    {
+      "id": "q30",
+      "type": "calculation",
+      "question": "Ile kelwinów to 1000°C?",
+      "correct_answer": "1273 K",
+      "accepted_answers": [
+        "1273 K",
+        "1273",
+        "1273K",
+        "1273,15",
+        "1273,15 K",
+        "1273,15K",
+        "1273.15",
+        "1273.15 K",
+        "1273.15K"
+      ],
+      "explanation": "T[K] = 1000 + 273 = 1273.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q31",
+      "type": "calculation",
+      "question": "W temperaturze 100°C długość fali maksymalnej wynosi 7,8 µm. Ile wyniesie w 1000°C?",
+      "correct_answer": "2,29 µm",
+      "accepted_answers": [
+        "2,29 µm",
+        "2,29",
+        "2,29µm",
+        "2.29",
+        "2.29 µm",
+        "2.29µm",
+        "2,3",
+        "2,3 µm",
+        "2,3µm",
+        "2.3",
+        "2.3 µm",
+        "2.3µm",
+        "ok. 2,29",
+        "ok. 2,29 µm",
+        "ok. 2,29µm",
+        "2,29",
+        "2,29 μm",
+        "2,29μm",
+        "2.29",
+        "2.29 μm",
+        "2.29μm"
+      ],
+      "explanation": "λ2 = λ1 · T1/T2 = 7,8 · 373/1273 ≈ 2,29 µm.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q32",
+      "type": "short_answer",
+      "question": "Uszereguj od najzimniejszej do najgorętszej: Słońce, gwiazda czerwona, gwiazda biała z odcieniem błękitu.",
+      "correct_answer": "gwiazda czerwona, Słońce, gwiazda biała",
+      "accepted_answers": [
+        "gwiazda czerwona, Słońce, gwiazda biała",
+        "czerwona, Słońce, biała",
+        "czerwona,Słońce,biała",
+        "gwiazda czerwona, Słońce, gwiazda biała z odcieniem błękitu",
+        "czerwona, Słońce, biała z błękitem"
+      ],
+      "explanation": "Barwa świadczy o temperaturze: czerwone są chłodne, białe z błękitem najgorętsze.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q33",
+      "type": "short_answer",
+      "question": "Z jakim rodzajem fal ciało o temperaturze 10 000°C emituje najwięcej energii?",
+      "correct_answer": "ultrafiolet",
+      "accepted_answers": [
+        "ultrafiolet",
+        "nadfiolet",
+        "promieniowanie ultrafioletowe",
+        "ultrafioletowe"
+      ],
+      "explanation": "λmax ≈ 280 nm.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q34",
+      "type": "short_answer",
+      "question": "Z jakim rodzajem fal ciało o temperaturze 5000°C emituje najwięcej energii?",
+      "correct_answer": "światło widzialne",
+      "accepted_answers": [
+        "światło widzialne",
+        "widzialne",
+        "promieniowanie widzialne"
+      ],
+      "explanation": "λmax ≈ 550 nm.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q35",
+      "type": "short_answer",
+      "question": "Z jakim rodzajem fal ciało o temperaturze 1 mln °C emituje najwięcej energii?",
+      "correct_answer": "promieniowanie rentgenowskie",
+      "accepted_answers": [
+        "promieniowanie rentgenowskie",
+        "rentgenowskie",
+        "promieniowanie X",
+        "rentgen",
+        "X"
+      ],
+      "explanation": "λmax ≈ 3 nm.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q36",
+      "type": "short_answer",
+      "question": "Podaj dwa gazy cieplarniane.",
+      "correct_answer": "dwutlenek węgla i metan",
+      "accepted_answers": [
+        "dwutlenek węgla i metan",
+        "CO2 i metan",
+        "metan i CO2",
+        "metan i dwutlenek węgla",
+        "dwutlenek węgla, metan",
+        "CO2, metan",
+        "metan, dwutlenek węgla"
+      ],
+      "explanation": "Pochłaniają podczerwień emitowaną przez Ziemię.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q37",
+      "type": "short_answer",
+      "question": "Jakie promieniowanie głównie emituje Ziemia, bo jest chłodniejsza od Słońca?",
+      "correct_answer": "podczerwone",
+      "accepted_answers": [
+        "podczerwone",
+        "promieniowanie podczerwone",
+        "podczerwień"
+      ],
+      "explanation": "Chłodniejsze ciała wysyłają fale dłuższe.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q38",
+      "type": "short_answer",
+      "question": "Jakim zjawiskiem ciepło ze Słońca dociera do Ziemi?",
+      "correct_answer": "promieniowaniem",
+      "accepted_answers": [
+        "promieniowaniem",
+        "promieniowanie",
+        "przez promieniowanie"
+      ],
+      "explanation": "Przez próżnię energia przenosi się promieniowaniem.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q39",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Tlen i azot są głównymi gazami, które pochłaniają podczerwień emitowaną przez Ziemię.",
+      "correct_answer": "F",
+      "accepted_answers": [
+        "F",
+        "fałsz",
+        "fałszywe"
+      ],
+      "explanation": "Odpowiadają za to dwutlenek węgla i metan.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q40",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Niewielka ilość dwutlenku węgla w atmosferze sprzyja utrzymaniu życia.",
+      "correct_answer": "P",
+      "accepted_answers": [
+        "P",
+        "prawda",
+        "prawdziwe"
+      ],
+      "explanation": "Bez efektu cieplarnianego Ziemia byłaby znacznie zimniejsza.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q41",
+      "type": "short_answer",
+      "question": "Co jest bezpośrednim skutkiem zwiększenia efektu cieplarnianego?",
+      "correct_answer": "podniesienie średniej temperatury Ziemi",
+      "accepted_answers": [
+        "podniesienie średniej temperatury Ziemi",
+        "wzrost temperatury",
+        "wzrost średniej temperatury Ziemi",
+        "ocieplenie",
+        "podniesienie temperatury"
+      ],
+      "explanation": "Więcej zatrzymanej energii oznacza wyższą temperaturę.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q42",
+      "type": "short_answer",
+      "question": "Co dzieje się z oceanami po podniesieniu średniej temperatury Ziemi?",
+      "correct_answer": "podgrzanie oceanów",
+      "accepted_answers": [
+        "podgrzanie oceanów",
+        "ocieplenie oceanów",
+        "oceany się podgrzewają"
+      ],
+      "explanation": "Wody oceanów magazynują ciepło.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q43",
+      "type": "short_answer",
+      "question": "Co dzieje się z wodą po podgrzaniu oceanów?",
+      "correct_answer": "zwiększenie objętości wody",
+      "accepted_answers": [
+        "zwiększenie objętości wody",
+        "rozszerza się",
+        "wzrost objętości wody",
+        "rozszerzanie się wody"
+      ],
+      "explanation": "Woda rozszerza się pod wpływem temperatury.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q44",
+      "type": "short_answer",
+      "question": "Jaki jest skutek zwiększenia objętości wody w oceanach?",
+      "correct_answer": "podniesienie poziomu morza",
+      "accepted_answers": [
+        "podniesienie poziomu morza",
+        "wzrost poziomu mórz",
+        "podniesienie poziomu mórz",
+        "podniesienie poziomu oceanów"
+      ],
+      "explanation": "To zamyka łańcuch przyczynowo-skutkowy.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q45",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Zmiana średniej temperatury Ziemi o 4°C jest niewielka dla klimatu.",
+      "correct_answer": "F",
+      "accepted_answers": [
+        "F",
+        "fałsz",
+        "fałszywe"
+      ],
+      "explanation": "Różnica kilku stopni oddziela epokę lodowcową od ciepłego okresu.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q46",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Zmiana temperatury o 4°C jest niewielka, gdy myślimy o zmianie pogody z dnia na dzień.",
+      "correct_answer": "P",
+      "accepted_answers": [
+        "P",
+        "prawda",
+        "prawdziwe"
+      ],
+      "explanation": "Pogoda zmienia się często o więcej niż 4°C, ale klimat to wartości uśrednione.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q47",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Energia zgromadzona w atmosferze nasila gwałtowne zjawiska pogodowe.",
+      "correct_answer": "P",
+      "accepted_answers": [
+        "P",
+        "prawda",
+        "prawdziwe"
+      ],
+      "explanation": "Więcej energii oznacza silniejsze burze i huragany.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q48",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Nawet powolne zmiany klimatu na przestrzeni milionów lat są katastrofalne dla Ziemi.",
+      "correct_answer": "F",
+      "accepted_answers": [
+        "F",
+        "fałsz",
+        "fałszywe"
+      ],
+      "explanation": "Problemem jest zbyt szybkie tempo zmian.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q49",
+      "type": "short_answer",
+      "question": "Jaki jest główny problem dla klimatu w obecnych zmianach?",
+      "correct_answer": "zbyt duże tempo zmian",
+      "accepted_answers": [
+        "zbyt duże tempo zmian",
+        "tempo zmian",
+        "szybkość zmian",
+        "zbyt szybkie zmiany"
+      ],
+      "explanation": "Przyrodnicze systemy nie nadążają za zmianami.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q50",
+      "type": "short_answer",
+      "question": "Który skutek NIE wynika z globalnego ocieplenia: spadek czy wzrost poziomu mórz?",
+      "correct_answer": "spadek poziomu mórz",
+      "accepted_answers": [
+        "spadek poziomu mórz",
+        "spadek poziomu morza",
+        "spadek"
+      ],
+      "explanation": "Globalne ocieplenie podnosi poziom mórz.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q51",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Chów zwierząt odpowiada za znaczną część emisji gazów cieplarnianych.",
+      "correct_answer": "P",
+      "accepted_answers": [
+        "P",
+        "prawda",
+        "prawdziwe"
+      ],
+      "explanation": "Duże znaczenie ma emisja metanu.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q52",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Metan, podobnie jak dwutlenek węgla, jest gazem cieplarnianym.",
+      "correct_answer": "P",
+      "accepted_answers": [
+        "P",
+        "prawda",
+        "prawdziwe"
+      ],
+      "explanation": "Metan jest nawet silniejszym gazem cieplarnianym, ale utrzymuje się krócej.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q53",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Budowa elektrowni jądrowych zwiększa emisję gazów cieplarnianych.",
+      "correct_answer": "F",
+      "accepted_answers": [
+        "F",
+        "fałsz",
+        "fałszywe"
+      ],
+      "explanation": "Elektrownie jądrowe nie emitują CO2 podczas pracy.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q54",
+      "type": "short_answer",
+      "question": "Jak nazywa się widmo, w którym kolory płynnie przechodzą jeden w drugi?",
+      "correct_answer": "ciągłe",
+      "accepted_answers": [
+        "ciągłe",
+        "widmo ciągłe"
+      ],
+      "explanation": "Widmo ciągłe nie ma przerw.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q55",
+      "type": "short_answer",
+      "question": "Jak nazywa się widmo złożone z pojedynczych pasków w różnych kolorach?",
+      "correct_answer": "liniowe",
+      "accepted_answers": [
+        "liniowe",
+        "widmo liniowe"
+      ],
+      "explanation": "Widmo liniowe składa się z oddzielnych linii.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q56",
+      "type": "short_answer",
+      "question": "Jakie widmo emituje rozgrzane ciało stałe?",
+      "correct_answer": "ciągłe",
+      "accepted_answers": [
+        "ciągłe",
+        "widmo ciągłe"
+      ],
+      "explanation": "Rozgrzane ciało stałe świeci widmem ciągłym.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q57",
+      "type": "short_answer",
+      "question": "Jakie widmo emituje gaz pobudzony do świecenia?",
+      "correct_answer": "liniowe",
+      "accepted_answers": [
+        "liniowe",
+        "widmo liniowe",
+        "liniowe emisyjne",
+        "widmo liniowe emisyjne"
+      ],
+      "explanation": "Gaz emituje tylko określone długości fal.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q58",
+      "type": "short_answer",
+      "question": "Co zobaczysz przez siatkę dyfrakcyjną, patrząc na rozgrzany gaz?",
+      "correct_answer": "liniowe widmo emisyjne",
+      "accepted_answers": [
+        "liniowe widmo emisyjne",
+        "widmo liniowe emisyjne",
+        "liniowe widmo",
+        "widmo liniowe"
+      ],
+      "explanation": "Gorący gaz wysyła światło tylko o określonych długościach fal.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q59",
+      "type": "short_answer",
+      "question": "Od czego zależą długości fal światła emitowanego przez gorący gaz?",
+      "correct_answer": "od rodzaju gazu",
+      "accepted_answers": [
+        "od rodzaju gazu",
+        "rodzaju gazu",
+        "rodzaj gazu",
+        "od rodzaju"
+      ],
+      "explanation": "Każdy pierwiastek ma swoje charakterystyczne linie.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q60",
+      "type": "short_answer",
+      "question": "Jak nazywa się widmo, które powstaje, gdy światło ciągłe przejdzie przez chłodny gaz?",
+      "correct_answer": "widmo absorpcyjne",
+      "accepted_answers": [
+        "widmo absorpcyjne",
+        "absorpcyjne",
+        "liniowe widmo absorpcyjne"
+      ],
+      "explanation": "W widmie ciągłym brakuje linii pochłoniętych przez gaz.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q61",
+      "type": "short_answer",
+      "question": "Jakie są częstotliwości linii absorpcyjnych w porównaniu z liniami emisyjnymi tego samego gazu?",
+      "correct_answer": "takie same",
+      "accepted_answers": [
+        "takie same",
+        "te same",
+        "identyczne",
+        "jednakowe"
+      ],
+      "explanation": "Gaz pochłania dokładnie te częstotliwości, które emituje.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q62",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Energia elektronu w atomie nie może przyjmować dowolnych wartości.",
+      "correct_answer": "P",
+      "accepted_answers": [
+        "P",
+        "prawda",
+        "prawdziwe"
+      ],
+      "explanation": "Energia elektronu jest skwantowana.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q63",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Elektrony w atomach przyjmują energię w porcjach zależnych wyłącznie od energii docierających do nich fotonów.",
+      "correct_answer": "F",
+      "accepted_answers": [
+        "F",
+        "fałsz",
+        "fałszywe"
+      ],
+      "explanation": "Foton jest pochłaniany tylko wtedy, gdy jego energia odpowiada różnicy poziomów.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q64",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Gdy elektron pochłania energię kilka razy, za każdym razem przyjmuje tę samą porcję.",
+      "correct_answer": "F",
+      "accepted_answers": [
+        "F",
+        "fałsz",
+        "fałszywe"
+      ],
+      "explanation": "Porcje zależą od przejść między poziomami.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q65",
+      "type": "short_answer",
+      "question": "Jaką energię musi mieć foton, aby elektron w atomie mógł go pochłonąć (wzbudzenie)?",
+      "correct_answer": "równą różnicy energii poziomów",
+      "accepted_answers": [
+        "równą różnicy energii poziomów",
+        "dokładnie określoną",
+        "równą różnicy poziomów energetycznych",
+        "równą różnicy energii między poziomami"
+      ],
+      "explanation": "Dopuszczalne są tylko przeskoki między poziomami.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q66",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Do zjonizowania atomu wystarczy jeden foton o odpowiednio dużej energii.",
+      "correct_answer": "P",
+      "accepted_answers": [
+        "P",
+        "prawda",
+        "prawdziwe"
+      ],
+      "explanation": "Foton oddaje energię jednemu elektronowi.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q67",
+      "type": "true_false",
+      "question": "Prawda czy fałsz? (wpisz P lub F) Nadmiar energii fotonu ponad energię jonizacji zamienia się na energię kinetyczną elektronu.",
+      "correct_answer": "P",
+      "accepted_answers": [
+        "P",
+        "prawda",
+        "prawdziwe"
+      ],
+      "explanation": "To nadwyżka ponad energię potrzebną do oderwania elektronu.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q68",
+      "type": "short_answer",
+      "question": "Co emituje atom, gdy elektron przeskakuje na niższy poziom energii?",
+      "correct_answer": "foton",
+      "accepted_answers": [
+        "foton",
+        "emituje foton",
+        "wysyła foton",
+        "wyemituje foton"
+      ],
+      "explanation": "Różnica energii poziomów unosi foton.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q69",
+      "type": "calculation",
+      "question": "Elektron przeskoczył z poziomu −2 eV na poziom −8 eV. Jaką energię miał wyemitowany foton?",
+      "correct_answer": "6 eV",
+      "accepted_answers": [
+        "6 eV",
+        "6",
+        "6eV"
+      ],
+      "explanation": "E = −2 − (−8) = 6 eV.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q70",
+      "type": "calculation",
+      "question": "Elektron z orbity 5 wyemitował foton o energii 13,056 eV (E0 = 13,6 eV, E = E0(1/m² − 1/n²)). Na którą orbitę przeszedł?",
+      "correct_answer": "1",
+      "accepted_answers": [
+        "1",
+        "pierwszą",
+        "na pierwszą",
+        "orbita 1",
+        "na orbitę 1",
+        "m=1"
+      ],
+      "explanation": "1/m² = 13,056/13,6 + 1/25 = 0,96 + 0,04 = 1, więc m = 1.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q71",
+      "type": "short_answer",
+      "question": "Napisz warunek kwantowania momentu pędu w modelu Bohra.",
+      "correct_answer": "mvr = nh/(2π)",
+      "accepted_answers": [
+        "mvr = nh/(2π)",
+        "mvr=nh/(2π)",
+        "mvr=nh/2π",
+        "m*v*r=n*h/(2π)",
+        "m·v·r=n·h/(2π)"
+      ],
+      "explanation": "Moment pędu elektronu to wielokrotność h/2π.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q72",
+      "type": "calculation",
+      "question": "Oblicz prędkość elektronu na trzeciej orbicie atomu wodoru (r = 4,77·10^-10 m, m = 9,11·10^-31 kg, h = 6,63·10^-34 J·s).",
+      "correct_answer": "7,3·10^5 m/s",
+      "accepted_answers": [
+        "7,3·10^5 m/s",
+        "7,3·10^5",
+        "7,3 · 10^5",
+        "7,3 · 10^5 m/s",
+        "7,3*10^5",
+        "7,3*10^5 m/s",
+        "7,3 * 10^5",
+        "7,3 * 10^5 m/s",
+        "7,3x10^5",
+        "7,3x10^5 m/s",
+        "7,3 x 10^5",
+        "7,3 x 10^5 m/s",
+        "7,3e5",
+        "7,3e5 m/s",
+        "7,3·10^(5)",
+        "7,3·10^(5) m/s",
+        "7,3*10^(5)",
+        "7,3*10^(5) m/s",
+        "7.3·10^5",
+        "7.3·10^5 m/s",
+        "7.3 · 10^5",
+        "7.3 · 10^5 m/s",
+        "7.3*10^5",
+        "7.3*10^5 m/s",
+        "7.3 * 10^5",
+        "7.3 * 10^5 m/s",
+        "7.3x10^5",
+        "7.3x10^5 m/s",
+        "7.3 x 10^5",
+        "7.3 x 10^5 m/s",
+        "7.3e5",
+        "7.3e5 m/s",
+        "7.3·10^(5)",
+        "7.3·10^(5) m/s",
+        "7.3*10^(5)",
+        "7.3*10^(5) m/s"
+      ],
+      "explanation": "v = nh/(2πmr) = 3·6,63·10^-34 / (2π·9,11·10^-31·4,77·10^-10) ≈ 7,3·10^5 m/s.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q73",
+      "type": "calculation",
+      "question": "Jaką część prędkości światła stanowi ta prędkość (c = 3·10^8 m/s)?",
+      "correct_answer": "0,24%",
+      "accepted_answers": [
+        "0,24%",
+        "0,24 %",
+        "0.24%",
+        "0.24 %",
+        "0,0024",
+        "0.0024",
+        "0,0024 c",
+        "0.0024 c",
+        "ok. 0,24%",
+        "ok. 0.24%",
+        "1/411"
+      ],
+      "explanation": "7,3·10^5 / 3·10^8 ≈ 0,0024, czyli około 0,24%, więc efekty relatywistyczne można pominąć.",
+      "case_sensitive": false
+    },
+    {
+      "id": "q74",
+      "type": "calculation",
+      "question": "Ile wynosi wartość bezwzględna energii elektronu na pierwszej orbicie atomu wodoru (E0)?",
+      "correct_answer": "13,6 eV",
+      "accepted_answers": [
+        "13,6 eV",
+        "13,6",
+        "13,6eV",
+        "13.6",
+        "13.6 eV",
+        "13.6eV"
+      ],
+      "explanation": "E0 = 13,6 eV.",
+      "case_sensitive": false
+    }
+  ]
+}
